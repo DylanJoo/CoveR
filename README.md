@@ -8,6 +8,20 @@ Standard dense retrievers are trained on relevance-annotated pairs (e.g., MS-MAR
 
 ---
 
+
+## Overview
+
+| | |
+|---|---|
+| [Installation](#installation)                                                                 | HuggingFace checkpoints and training corpora |
+| [Models & datasets](#models--datasets-huggingface)                                            | HuggingFace checkpoints and training corpora |
+| [Evaluation](#evaluation)                                                                     | BEIR · CRUX-MDS · MS-MARCO passage · NeuCLIR |
+| [Pre-fine-tuning (PFT)](#1-pre-fine-tuning-pft--optional)                                     | Contrastive training on MS-MARCO (relevance-based) |
+| [Coverage-based training (CoveR)](#2-coverage-based-training-cover)                           | Coverage-bucket sampling pairs from CRUX-Researchy |
+| [Sub-question augmented training (CoveR + SQ)](#3-sub-question-augmented-training-cover--sq)  | CoveR + sub-question augmentation (w/ or w/o PFT) |
+| [Two-stage training](#4-two-stage-training)                                                   | Flat relevance CRUX fine-tuning → coverage fine-tuning |
+| [Data curation](#data-curation)                                                               | Coverage-bucket sampling · sub-question generation · MS-MARCO sampling |
+
 ## Installation
 
 ```bash
@@ -20,19 +34,6 @@ cd tevatron && pip install -e . && cd ..
 # Install the CRUX evaluation toolkit
 pip install crux   # or: git clone https://github.com/DylanJHJ/crux && pip install -e crux/
 ```
-
-## Overview
-
-| | |
-|---|---|
-| [Models & datasets](#models--datasets-huggingface)                                              | HuggingFace checkpoints and training corpora |
-| [Evaluation](#evaluation)                                                                        | BEIR · CRUX-MDS · MS-MARCO passage · NeuCLIR |
-| [Pre-fine-tuning (PFT)](#1-pre-fine-tuning-pft--optional)                                       | Contrastive training on MS-MARCO (relevance-based) |
-| [Coverage-based training (CoveR)](#2-coverage-based-training-cover)                             | Coverage-bucket sampling pairs from CRUX-Researchy |
-| [Sub-question augmented training (CoveR + SQ)](#3-sub-question-augmented-training-cover--sq)    | CoveR + sub-question augmentation (w/ or w/o PFT) |
-| [Two-stage training](#4-two-stage-training)                                                     | Flat relevance CRUX fine-tuning → coverage fine-tuning |
-| [Data curation](#data-curation)                                                                  | Coverage-bucket sampling · sub-question generation · MS-MARCO sampling |
-
 ---
 ## Models & datasets (HuggingFace)
 
