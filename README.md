@@ -89,35 +89,38 @@ Baseline results (BM25, LSR, Qwen3 ± LLM reranking) are logged in `eval.neuclir
 ---
 ## Training pipeline
 
-### 1. Pre-fine-tuning (PFT) — optional
-
-Fine-tune a base model on MS-MARCO passage retrieval as a warm-start before coverage training.
+### 1. Fine-tuning with MSMARCO 
+Fine-tune a base model on MS-MARCO passage retrieval as a baseline. 
+We also consider this stage as pre-fine-tune before coverage training, which the resulting checkpoint is used as the starting point for coverage training.
 
 ```bash
 accelerate launch -m \
     --multi_gpu --mixed_precision=bf16 --num_processes 2 \
     tevatron.retriever.driver.train_dev \
     --model_name_or_path nomic-ai/modernbert-embed-base-unsupervised \
-    --output_dir <output_dir> \
+    --output_dir unsupervised.msmarco-passage-new.10k \
     --dataset_name Tevatron/msmarco-passage-new \
     --corpus_name Tevatron/msmarco-passage-corpus-new \
-    --per_device_train_batch_size 32 --train_group_size 8 \
+    --per_device_train_batch_size 32 \
+    --train_group_size 8 \
     --bf16 --pooling mean --normalize \
-    --passage_prefix "search_document: " --query_prefix "search_query: " \
-    --temperature 0.02 --learning_rate 1e-4 \
-    --query_max_len 32 --passage_max_len 256 \
-    --max_steps 10000 --warmup_steps 1000 \
-    --lr_scheduler_type cosine --weight_decay 0.01 \
+    --passage_prefix "search_document: " \
+    --query_prefix "search_query: " \
+    --temperature 0.02 \
+    --learning_rate 1e-4 \
+    --query_max_len 32 \
+    --passage_max_len 256 \
+    --max_steps 10000 \
+    --warmup_steps 1000 \
+    --lr_scheduler_type cosine \
+    --weight_decay 0.01 \
     --exclude_title
 ```
+For the SCOPE-flatten setting, we simply chnage the datasets and change the `passage_max_len` to 512 as well. Total batch size is still 64 (batch size=16, num processes=4)
 
-The SLURM scripts `slurm/modernbert/train.modernbert.sh` (relevance-based) and `slurm/modernbert/train.modernbert.kd.sh` (with KD scores from Qwen3-0.6B reranker) run the equivalent commands on the cluster.
-
-The resulting checkpoint (`DylanJHJ/nomic.modernbert-base.msmarco-passage.10k` or similar) is used as the starting point for coverage training.
-
-### 2. Coverage-based training (CoveR)
-
-Train on CRUX-Researchy using coverage-bucket sampling pairs.
+### 2. Fine-tuning with SCOPE
+Train on SCOPE datasets using coverage-based training. 
+The pre-fine-tuned checkpoints are defined in ``model_name_or_path=``.
 
 ```bash
 # Run all 7 coverage-sampling ablations as a SLURM array job
