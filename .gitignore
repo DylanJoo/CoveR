@@ -1,0 +1,24 @@
+# Editor / OS
+*.swp
+*.swo
+.DS_Store
+
+# SLURM logs and job output
+logs/
+**/*.out
+**/*.err
+
+# Experiment artifacts
+wandb/
+result.*
+**/result.*
+
+# Large run files and indices
+src/evaluation-data-curation/runs/
+runs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env

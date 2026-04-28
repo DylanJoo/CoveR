@@ -2,52 +2,90 @@
 
 **CoveR** is the codebase for _"Search for Coverage: Learning Coverage-Aware Retrieval with Augmented Sub-Question Answerability"_.
 
-The goal is to train dense retrieval models that maximise **coverage** — the fraction of answerable sub-topics in a multi-aspect information need that the retrieved documents collectively address — rather than simply optimising for per-query relevance.
-
----
-
-## Overview
+The goal is to train dense retrieval models that maximise **information coverage**, the fraction of answerable sub-topics in a multi-aspect information need that the retrieved documents collectively address — rather than simply optimising for relevance-based ranking.
 
 Standard dense retrievers are trained on relevance-annotated pairs (e.g., MS-MARCO). For complex, research-style requests that span multiple sub-aspects, a document may be relevant to the request as a whole but only partially address its sub-topics. CoveR trains on coverage-labelled data derived from [CRUX-Researchy](https://huggingface.co/datasets/DylanJHJ/crux-researchy), where each document is judged on how many of a request's sub-questions it can answer.
 
-<!-- Key ideas: -->
-<!-- - **Coverage score**: for a document _d_ and request _q_ with _k_ answerable sub-topics, coverage is the fraction of sub-topics for which _d_ receives a judge rating ≥ τ. -->
-<!-- - **Coverage-based sampling**: positive/negative pairs are constructed from coverage buckets (high ≥ 0.75, half 0.5–0.75, quarter 0.25–0.5, low 0–0.25, zero = 0) rather than by rank alone. -->
-<!-- - **Sub-question augmentation**: the request is decomposed into sub-queries, which are used as additional query views during training to align document representations with fine-grained information needs. -->
-<!-- - **CovDistil**: a coverage-distillation loss that transfers a teacher's coverage distribution (e.g., from a reranker) to the student retriever. -->
-
-<!-- ## Repository structure -->
-<!--  -->
-<!-- ``` -->
-<!-- CoveR/ -->
-<!-- ├── tevatron/              # Modified Tevatron framework (training + encoding + search) -->
-<!-- ├── src/ -->
-<!-- │   ├── multi-view-data-curation/      # Coverage-based positive/negative sampling -->
-<!-- │   ├── single-view-data-curation/     # Rank-based and KD-based sampling (MS-MARCO) -->
-<!-- │   ├── evaluation-data-curation/      # Scripts to build BEIR / NeuCLIR / CRUX eval sets -->
-<!-- │   ├── create-crux-mds-subqueries/    # Sub-question generation from research requests -->
-<!-- │   ├── pretokenization/               # Pre-tokenisation utilities -->
-<!-- │   ├── sig-test/                      # Paired t-test significance testing -->
-<!-- │   └── coverage-analysis/             # Coverage distribution analysis -->
-<!-- ├── slurm/ -->
-<!-- │   ├── modernbert/                    # ModernBERT MS-MARCO pre-fine-tuning -->
-<!-- │   ├── modernbert.crux-researchy/     # ModernBERT CoveR training (coverage sampling) -->
-<!-- │   ├── exp-for-init/                  # Two-query CoveR training (request + sub-queries) -->
-<!-- │   ├── exp-for-ft/                    # Further fine-tuning experiments -->
-<!-- │   ├── training/                      # CE+contrastive training variants -->
-<!-- │   └── use-query/                     # Use-query ablations -->
-<!-- ├── eval.beir/             # BEIR encoding + search scripts -->
-<!-- ├── eval.beir-subset/      # BEIR subset (with baselines) -->
-<!-- ├── eval.crux/             # CRUX-MDS evaluation scripts -->
-<!-- ├── eval.msmarco-passage/  # MS-MARCO passage evaluation scripts -->
-<!-- ├── eval.neuclir/          # NeuCLIR evaluation scripts -->
-<!-- ├── eval-on-lumi/          # Lumi-cluster evaluation scripts (ModernBERT + Qwen3) -->
-<!-- ├── configs/               # DeepSpeed / accelerate configs -->
-<!-- └── legacy/                # Archived experiments -->
-<!-- ``` -->
-
 ---
 
+## Installation
+
+```bash
+# Install Tevatron
+pip install transformers datasets peft
+pip install deepspeed accelerate
+pip install faiss-cpu
+cd tevatron && pip install -e . && cd ..
+
+# Install the CRUX evaluation toolkit
+pip install crux   # or: git clone https://github.com/DylanJHJ/crux && pip install -e crux/
+```
+
+## Overview
+
+| | |
+|---|---|
+| [Models & datasets](#models--datasets-huggingface)                                              | HuggingFace checkpoints and training corpora |
+| [Evaluation](#evaluation)                                                                        | BEIR · CRUX-MDS · MS-MARCO passage · NeuCLIR |
+| [Pre-fine-tuning (PFT)](#1-pre-fine-tuning-pft--optional)                                       | Contrastive training on MS-MARCO (relevance-based) |
+| [Coverage-based training (CoveR)](#2-coverage-based-training-cover)                             | Coverage-bucket sampling pairs from CRUX-Researchy |
+| [Sub-question augmented training (CoveR + SQ)](#3-sub-question-augmented-training-cover--sq)    | CoveR + sub-question augmentation (w/ or w/o PFT) |
+| [Two-stage training](#4-two-stage-training)                                                     | Flat relevance CRUX fine-tuning → coverage fine-tuning |
+| [Data curation](#data-curation)                                                                  | Coverage-bucket sampling · sub-question generation · MS-MARCO sampling |
+
+---
+## Models & datasets (HuggingFace)
+
+| Artifact | HF identifier |
+|---|---|
+| Base model (unsupervised ModernBERT) | `nomic-ai/modernbert-embed-base-unsupervised` |
+| MS-MARCO PFT checkpoint | `DylanJHJ/nomic.modernbert-base.msmarco-passage.10k` |
+| CRUX-Researchy flat checkpoint | `DylanJHJ/nomic.modernbert-base.crux-researchy-flatten.10k` |
+| Training data | `DylanJHJ/crux-researchy`, `DylanJHJ/crux-researchy-new` |
+| Training corpus | `DylanJHJ/crux-researchy-corpus` |
+| KD training data | `DylanJHJ/crux-researchy-kdnew-ext` |
+| BEIR corpus | `DylanJHJ/beir-corpus` |
+| BEIR queries | `DylanJHJ/beir-subset` |
+
+---
+## Evaluation
+
+### BEIR
+
+```bash
+# Encode corpus and queries
+sbatch eval.beir/encode.modernbert.sh
+
+# Search (produces .run files)
+# then compute nDCG@10 per dataset
+```
+
+### CRUX-MDS (multi-document summarization)
+
+```bash
+sbatch eval.crux/encode.modernbert.sh  # (or .bert.sh / .repllama.sh)
+# search + evaluate with crux.evaluation.rac_eval
+sbatch eval.crux/search.modernbert.sh
+```
+
+### MS-MARCO passage
+
+```bash
+sbatch eval.msmarco-passage/encode-d.bert.sh
+sbatch eval.msmarco-passage/encode-q.bert.sh
+sbatch eval.msmarco-passage/search.bert.sh
+```
+
+### NeuCLIR
+
+```bash
+sbatch eval.neuclir/encode.modernbert.sh
+sbatch eval.neuclir/search.modernbert.sh
+```
+
+Baseline results (BM25, LSR, Qwen3 ± LLM reranking) are logged in `eval.neuclir/baseline.md`.
+
+---
 ## Training pipeline
 
 ### 1. Pre-fine-tuning (PFT) — optional
@@ -55,12 +93,26 @@ Standard dense retrievers are trained on relevance-annotated pairs (e.g., MS-MAR
 Fine-tune a base model on MS-MARCO passage retrieval as a warm-start before coverage training.
 
 ```bash
-# Standard contrastive training on MS-MARCO
-sbatch slurm/modernbert/train.modernbert.sh          # relevance-based
-sbatch slurm/modernbert/train.modernbert.kd.sh       # with KD scores from Qwen3-0.6B reranker
+accelerate launch -m \
+    --multi_gpu --mixed_precision=bf16 --num_processes 2 \
+    tevatron.retriever.driver.train_dev \
+    --model_name_or_path nomic-ai/modernbert-embed-base-unsupervised \
+    --output_dir <output_dir> \
+    --dataset_name Tevatron/msmarco-passage-new \
+    --corpus_name Tevatron/msmarco-passage-corpus-new \
+    --per_device_train_batch_size 32 --train_group_size 8 \
+    --bf16 --pooling mean --normalize \
+    --passage_prefix "search_document: " --query_prefix "search_query: " \
+    --temperature 0.02 --learning_rate 1e-4 \
+    --query_max_len 32 --passage_max_len 256 \
+    --max_steps 10000 --warmup_steps 1000 \
+    --lr_scheduler_type cosine --weight_decay 0.01 \
+    --exclude_title
 ```
 
-The PFT checkpoint (`DylanJHJ/nomic.modernbert-base.msmarco-passage.10k` or similar) is used as the starting point for coverage training.
+The SLURM scripts `slurm/modernbert/train.modernbert.sh` (relevance-based) and `slurm/modernbert/train.modernbert.kd.sh` (with KD scores from Qwen3-0.6B reranker) run the equivalent commands on the cluster.
+
+The resulting checkpoint (`DylanJHJ/nomic.modernbert-base.msmarco-passage.10k` or similar) is used as the starting point for coverage training.
 
 ### 2. Coverage-based training (CoveR)
 
@@ -88,12 +140,39 @@ Coverage splits:
 
 ### 3. Sub-question augmented training (CoveR + SQ)
 
-Uses the full research request **and** decomposed sub-queries as dual query views (`--request_as_query`, `--subquery_prefix`). Also supports a CovDistil KLD loss (`--covdistil_lambda`).
+Uses the full research request **and** decomposed sub-queries as dual query views (`--subquery_prefix`). CovDistil KLD loss can be enabled via `--covdistil_lambda`.
+
+**SCOPE w/o PFT** — train directly from the unsupervised base:
 
 ```bash
-sbatch slurm/exp-for-init/unsupervised-pft.scope-ft.sh   # unsupervised PFT → CoveR+SQ
-sbatch slurm/exp-for-init/msmarco-pft.scope-ft.sh        # MS-MARCO PFT → CoveR+SQ
+accelerate launch -m \
+    --multi_gpu --mixed_precision=bf16 --num_processes 4 \
+    tevatron.retriever.driver.train_dualdistil \
+    --model_name_or_path nomic-ai/modernbert-embed-base-unsupervised \
+    --output_dir <output_dir> \
+    --dataset_name DylanJHJ/crux-researchy-kdnew-ext \
+    --corpus_name DylanJHJ/crux-researchy-corpus \
+    --dataset_split pos_half.neu_low.neg_zero \
+    --per_device_train_batch_size 16 --train_group_size 8 \
+    --bf16 --pooling mean --normalize \
+    --passage_prefix "search_document: " \
+    --query_prefix "search_query: " --subquery_prefix "search_query: " \
+    --temperature 0.02 --learning_rate 1e-4 \
+    --use_crossentropy 1.0 --contrastive_lambda 1.0 --sq_contrastive_lambda 1.0 \
+    --covdistil_method KLD --covdistil_lambda 0.0 \
+    --query_max_len 180 --passage_max_len 512 \
+    --max_steps 10000 --warmup_steps 500 \
+    --lr_scheduler_type cosine --exclude_title
 ```
+
+**SCOPE w/ PFT** — warm-start from the MS-MARCO checkpoint:
+
+```bash
+# Same command as above, but replace --model_name_or_path with the PFT checkpoint:
+#   --model_name_or_path DylanJHJ/nomic.modernbert-base.msmarco-passage.10k
+```
+
+The SLURM scripts `slurm/exp-for-init/unsupervised-pft.scope-ft.sh` and `slurm/exp-for-init/msmarco-pft.scope-ft.sh` run the equivalent commands on the cluster.
 
 ### 4. Two-stage training
 
@@ -139,71 +218,6 @@ python src/evaluation-data-curation/create_beir_corpus.py
 python src/evaluation-data-curation/create_msmarco-passage_data.py
 python src/evaluation-data-curation/create_nano_beir_data.py
 ```
-
----
-
-## Evaluation
-
-### BEIR
-
-```bash
-# Encode corpus and queries
-sbatch eval.beir/encode.modernbert.sh
-
-# Search (produces .run files)
-# then compute nDCG@10 per dataset
-```
-
-### CRUX-MDS (multi-document summarization)
-
-```bash
-sbatch eval.crux/encode.modernbert.sh  # (or .bert.sh / .repllama.sh)
-# search + evaluate with crux.evaluation.rac_eval
-sbatch eval.crux/search.modernbert.sh
-```
-
-Metrics reported: `nDCG@10`, `alpha_nDCG@10`, `Cov@10`, `P@10`.
-
-### MS-MARCO passage
-
-```bash
-sbatch eval.msmarco-passage/encode-d.bert.sh
-sbatch eval.msmarco-passage/encode-q.bert.sh
-sbatch eval.msmarco-passage/search.bert.sh
-```
-
-### NeuCLIR
-
-```bash
-sbatch eval.neuclir/encode.modernbert.sh
-sbatch eval.neuclir/search.modernbert.sh
-```
-
-Baseline results (BM25, LSR, Qwen3 ± LLM reranking) are logged in `eval.neuclir/baseline.md`.
-
----
-
-## Models & datasets (HuggingFace)
-
-| Artifact | HF identifier |
-|---|---|
-| Base model (unsupervised ModernBERT) | `nomic-ai/modernbert-embed-base-unsupervised` |
-| MS-MARCO PFT checkpoint | `DylanJHJ/nomic.modernbert-base.msmarco-passage.10k` |
-| CRUX-Researchy flat checkpoint | `DylanJHJ/nomic.modernbert-base.crux-researchy-flatten.10k` |
-| Training data | `DylanJHJ/crux-researchy`, `DylanJHJ/crux-researchy-new` |
-| Training corpus | `DylanJHJ/crux-researchy-corpus` |
-| KD training data | `DylanJHJ/crux-researchy-kdnew-ext` |
-| BEIR corpus | `DylanJHJ/beir-corpus` |
-| BEIR queries | `DylanJHJ/beir-subset` |
-
----
-
-## Requirements
-
-- [Tevatron](https://github.com/texttron/tevatron) (included as `tevatron/` submodule)
-- [CRUX](https://github.com/DylanJHJ/crux) evaluation toolkit (`pip install crux` or local install)
-- PyTorch + HuggingFace Transformers / Accelerate
-- DeepSpeed (optional, configs in `configs/`)
 
 ---
 
