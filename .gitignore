@@ -11,6 +11,7 @@ logs/
 # Experiment artifacts
 wandb/
 result.*
+result/*.log
 **/result.*
 
 # Large run files and indices
