@@ -39,9 +39,8 @@ pip install crux   # or: git clone https://github.com/DylanJHJ/crux && pip insta
 
 | Artifact | HF identifier |
 |---|---|
-| Base model (unsupervised ModernBERT) | `nomic-ai/modernbert-embed-base-unsupervised` |
-| MS-MARCO PFT checkpoint | `DylanJHJ/nomic.modernbert-base.msmarco-passage.10k` |
-| CRUX-Researchy flat checkpoint | `DylanJHJ/nomic.modernbert-base.crux-researchy-flatten.10k` |
+| Unsupervised            | `nomic-ai/modernbert-embed-base-unsupervised` |
+| MS-MARCO PFT checkpoint | `DylanJHJ/modernbert-base.relevance` |
 | Training data | `DylanJHJ/crux-researchy`, `DylanJHJ/crux-researchy-new` |
 | Training corpus | `DylanJHJ/crux-researchy-corpus` |
 | KD training data | `DylanJHJ/crux-researchy-kdnew-ext` |
