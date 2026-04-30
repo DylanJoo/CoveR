@@ -1,69 +1,67 @@
 #!/bin/bash -l
-#SBATCH --job-name=scope
-#SBATCH --output=logs/scope.out
-#SBATCH --error=logs/scope.err
+#SBATCH --job-name=train
+#SBATCH --output=logs/two-stage.out
+#SBATCH --error=logs/two-stage.err
 #SBATCH --partition=small-g
 #SBATCH --ntasks-per-node=1
 #SBATCH --nodes=1                   # Total number of nodes 
 #SBATCH --cpus-per-task=16
 #SBATCH --gpus-per-node=4           # Allocate one gpu per MPI rank
-#SBATCH --array=0
-#SBATCH --mem=128G
-#SBATCH --time=12:00:00             # Run time (d-hh:mm:ss)
-#SBATCH --account=project_465002532 # Project for billing
+#SBATCH --mem=256G
+#SBATCH --time=12:00:00           # Run time (d-hh:mm:ss)
+#SBATCH --account=project_465002438 # Project for billing
 
 module use /appl/local/csc/modulefiles/
 module use /appl/local/training/modules/AI-20241126/
 export TOKENIZERS_PARALLELISM=false
-export CRUX_ROOT=${HOME}/datasets/crux
 
-lr=5e-5
-model_dir=${HOME}/models/CoveR/unsupervised.scope-10k
+bsz=64
+nsample=512
+lr=1e-4
+split=pos_half.neg_zero
 
 mkdir -p ${model_dir}
 
 GPUS_PER_NODE=4
 NUM_NODES=1
 NUM_PROCESSES=$(expr $NUM_NODES \* $GPUS_PER_NODE)
-PRETRAINED=nomic-ai/modernbert-embed-base-unsupervised
+
+PRETRAINED=DylanJHJ/nomic.modernbert-base.crux-researchy-flatten.10k
+model_dir=${HOME}/models/ablation.two-stage/modernbert-two-stage-crux-researchy-${split}.b${bsz}_n${nsample}.${lr}.crux-researchy.request
+
+# PRETRAINED=DylanJHJ/nomic.modernbert-base.msmarco-passage.10k
+# model_dir=${HOME}/models/ablation.two-stage/modernbert-two-stage-crux-researchy-${split}.b${bsz}_n${nsample}.${lr}.msmarco.request
 
 # Start experiments
 srun singularity exec $SIF \
     accelerate launch -m \
     --multi_gpu --mixed_precision=bf16 \
     --num_processes $NUM_PROCESSES  --num_machines $NUM_NODES \
-    tevatron.retriever.driver.train_dualdistil \
+    tevatron.retriever.driver.train_dev \
     --exclude_title \
     --output_dir ${model_dir} \
     --model_name_or_path $PRETRAINED \
     --save_steps 1000 \
-    --dataset_name DylanJHJ/crux-researchy-kdnew-ext \
+    --dataset_name DylanJHJ/crux-researchy-new \
     --corpus_name DylanJHJ/crux-researchy-corpus \
-    --request_as_query True \
-    --dataset_split pos_half.neu_low.neg_zero \
+    --dataset_split $split \
     --per_device_train_batch_size 16 \
     --train_group_size 8 \
     --prediction_loss_only True \
     --bf16 --pooling mean --normalize \
     --passage_prefix "search_document: " \
     --query_prefix "search_query: " \
-    --subquery_prefix "search_query: " \
+    --request_as_query \
     --temperature 0.02 \
-    --use_crossentropy 1.0 \
-    --use_kld 0.0 \
-    --contrastive_lambda 1.0 \
-    --sq_contrastive_lambda 0.0 \
-    --covdistil_method KLD \
-    --covdistil_lambda 0.1 \
-    --eval_steps 500 \
+    --eval_steps 1000 \
     --learning_rate $lr \
-    --query_max_len 180 \
+    --query_max_len 128 \
     --passage_max_len 512 \
-    --dataloader_num_workers 8 \
+    --dataloader_num_workers 4 \
     --lr_scheduler_type 'cosine' \
     --weight_decay 0.01 \
-    --max_steps 10000 \
-    --warmup_steps 1000 \
+    --max_steps 5000 \
+    --warmup_steps 500 \
     --logging_steps 10 \
     --overwrite_output_dir \
     --run_name ${model_dir##*/}

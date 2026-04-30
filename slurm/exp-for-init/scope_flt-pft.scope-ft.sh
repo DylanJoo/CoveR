@@ -1,7 +1,7 @@
 #!/bin/bash -l
-#SBATCH --job-name=scope
-#SBATCH --output=logs/scope.out
-#SBATCH --error=logs/scope.err
+#SBATCH --job-name=train
+#SBATCH --output=logs/pft/out
+#SBATCH --error=logs/pft/err
 #SBATCH --partition=small-g
 #SBATCH --ntasks-per-node=1
 #SBATCH --nodes=1                   # Total number of nodes 
@@ -9,23 +9,23 @@
 #SBATCH --gpus-per-node=4           # Allocate one gpu per MPI rank
 #SBATCH --array=0
 #SBATCH --mem=128G
-#SBATCH --time=12:00:00             # Run time (d-hh:mm:ss)
-#SBATCH --account=project_465002532 # Project for billing
+#SBATCH --time=4:00:00           # Run time (d-hh:mm:ss)
+#SBATCH --account=project_465002438 # Project for billing
 
 module use /appl/local/csc/modulefiles/
 module use /appl/local/training/modules/AI-20241126/
 export TOKENIZERS_PARALLELISM=false
 export CRUX_ROOT=${HOME}/datasets/crux
 
-lr=5e-5
-model_dir=${HOME}/models/CoveR/unsupervised.scope-10k
-
+# Models
+model_dir=${HOME}/models/cov-contrastive/scope_flt-pft.10k
 mkdir -p ${model_dir}
 
 GPUS_PER_NODE=4
 NUM_NODES=1
 NUM_PROCESSES=$(expr $NUM_NODES \* $GPUS_PER_NODE)
-PRETRAINED=nomic-ai/modernbert-embed-base-unsupervised
+PRETRAINED=DylanJHJ/nomic.modernbert-base.scope-flatten.10k
+SPLIT=pos_half.neu_low.neg_zero
 
 # Start experiments
 srun singularity exec $SIF \
@@ -39,8 +39,7 @@ srun singularity exec $SIF \
     --save_steps 1000 \
     --dataset_name DylanJHJ/crux-researchy-kdnew-ext \
     --corpus_name DylanJHJ/crux-researchy-corpus \
-    --request_as_query True \
-    --dataset_split pos_half.neu_low.neg_zero \
+    --dataset_split $SPLIT \
     --per_device_train_batch_size 16 \
     --train_group_size 8 \
     --prediction_loss_only True \
@@ -52,18 +51,17 @@ srun singularity exec $SIF \
     --use_crossentropy 1.0 \
     --use_kld 0.0 \
     --contrastive_lambda 1.0 \
-    --sq_contrastive_lambda 0.0 \
+    --sq_contrastive_lambda 1.0 \
     --covdistil_method KLD \
-    --covdistil_lambda 0.1 \
-    --eval_steps 500 \
-    --learning_rate $lr \
+    --covdistil_lambda 0.0 \
+    --eval_steps 1000 \
+    --learning_rate 1e-4 \
     --query_max_len 180 \
     --passage_max_len 512 \
     --dataloader_num_workers 8 \
     --lr_scheduler_type 'cosine' \
-    --weight_decay 0.01 \
     --max_steps 10000 \
-    --warmup_steps 1000 \
+    --warmup_steps 500 \
     --logging_steps 10 \
     --overwrite_output_dir \
     --run_name ${model_dir##*/}

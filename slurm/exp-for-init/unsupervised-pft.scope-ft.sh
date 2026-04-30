@@ -15,10 +15,9 @@
 module use /appl/local/csc/modulefiles/
 module use /appl/local/training/modules/AI-20241126/
 export TOKENIZERS_PARALLELISM=false
-export CRUX_ROOT=${HOME}/datasets/crux
 
-lr=5e-5
-model_dir=${HOME}/models/CoveR/unsupervised.scope-10k
+lr=1e-4
+model_dir=${HOME}/models/cov-contrastive/unsupervised-pft.10k
 
 mkdir -p ${model_dir}
 
@@ -39,7 +38,6 @@ srun singularity exec $SIF \
     --save_steps 1000 \
     --dataset_name DylanJHJ/crux-researchy-kdnew-ext \
     --corpus_name DylanJHJ/crux-researchy-corpus \
-    --request_as_query True \
     --dataset_split pos_half.neu_low.neg_zero \
     --per_device_train_batch_size 16 \
     --train_group_size 8 \
@@ -52,10 +50,10 @@ srun singularity exec $SIF \
     --use_crossentropy 1.0 \
     --use_kld 0.0 \
     --contrastive_lambda 1.0 \
-    --sq_contrastive_lambda 0.0 \
+    --sq_contrastive_lambda 1.0 \
     --covdistil_method KLD \
-    --covdistil_lambda 0.1 \
-    --eval_steps 500 \
+    --covdistil_lambda 0.0 \
+    --eval_steps 1000 \
     --learning_rate $lr \
     --query_max_len 180 \
     --passage_max_len 512 \

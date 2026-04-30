@@ -1,7 +1,7 @@
 #!/bin/bash -l
-#SBATCH --job-name=scope
-#SBATCH --output=logs/scope.out
-#SBATCH --error=logs/scope.err
+#SBATCH --job-name=cover
+#SBATCH --output=logs/cover.out
+#SBATCH --error=logs/cover.err
 #SBATCH --partition=small-g
 #SBATCH --ntasks-per-node=1
 #SBATCH --nodes=1                   # Total number of nodes 
@@ -17,15 +17,15 @@ module use /appl/local/training/modules/AI-20241126/
 export TOKENIZERS_PARALLELISM=false
 export CRUX_ROOT=${HOME}/datasets/crux
 
-lr=5e-5
-model_dir=${HOME}/models/CoveR/unsupervised.scope-10k
+lr=1e-4
+model_dir=${HOME}/models/CoveR/relevance-ms-pft.cover-5k
 
 mkdir -p ${model_dir}
 
 GPUS_PER_NODE=4
 NUM_NODES=1
 NUM_PROCESSES=$(expr $NUM_NODES \* $GPUS_PER_NODE)
-PRETRAINED=nomic-ai/modernbert-embed-base-unsupervised
+PRETRAINED=DylanJHJ/modernbert-base.relevance
 
 # Start experiments
 srun singularity exec $SIF \
@@ -62,8 +62,8 @@ srun singularity exec $SIF \
     --dataloader_num_workers 8 \
     --lr_scheduler_type 'cosine' \
     --weight_decay 0.01 \
-    --max_steps 10000 \
-    --warmup_steps 1000 \
+    --max_steps 5000 \
+    --warmup_steps 500 \
     --logging_steps 10 \
     --overwrite_output_dir \
     --run_name ${model_dir##*/}
