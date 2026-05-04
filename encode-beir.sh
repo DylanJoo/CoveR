@@ -6,7 +6,7 @@
 #SBATCH --gres=gpu:nvidia_rtx_a6000:1
 #SBATCH --ntasks-per-node=1        
 #SBATCH --nodes=1                
-#SBATCH --array=0-12%4
+#SBATCH --array=0-12%2
 #SBATCH --mem=32G
 #SBATCH --time=12:00:00
 
@@ -16,9 +16,14 @@ initconda
 conda activate inference 
 
 MODEL_DIRS=(
-# DylanJHJ/modernbert-base.relevance
-DylanJHJ/modernbert-base.cover
-DylanJHJ/modernbert-base.scope-5k
+# DylanJHJ/modernbert-base.relevance-10k
+# DylanJHJ/modernbert-base.cover-5k
+# DylanJHJ/modernbert-base.scope-5k
+# DylanJHJ/modernbert-base.scope-10k
+# DylanJHJ/modernbert-base.relevance-25k # worse than 10k
+# DylanJHJ/modernbert-base.cover.covcon-only # worse than cover
+DylanJHJ/modernbert-base.cover-10k
+DylanJHJ/modernbert-base.relevance-scope-flt-10k
 )
 
 DATASETS=(
@@ -39,7 +44,7 @@ DATASETS=(
 DATASET=${DATASETS[$SLURM_ARRAY_TASK_ID]}
 
 for model_dir in "${MODEL_DIRS[@]}"; do
-    output_dir=${HOME}/indices/beir-corpus/${model_dir##*/}
+    output_dir=${HOME}/scratch/beir-corpus/${model_dir##*/}
     mkdir -p $output_dir
 
     for SHARD_ID in 0 1;do

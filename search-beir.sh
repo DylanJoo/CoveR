@@ -16,8 +16,13 @@ conda activate inference
 
 MODEL_DIRS=(
 # DylanJHJ/modernbert-base.relevance
-DylanJHJ/modernbert-base.cover
-DylanJHJ/modernbert-base.scope-5k
+# DylanJHJ/modernbert-base.cover-5k
+# DylanJHJ/modernbert-base.scope-5k
+# DylanJHJ/modernbert-base.scope-10k
+# DylanJHJ/modernbert-base.relevance-25k
+# DylanJHJ/modernbert-base.cover.covcon-only
+DylanJHJ/modernbert-base.cover-10k
+DylanJHJ/modernbert-base.relevance-scope-flt-10k
 )
 
 DATASETS=(
@@ -57,7 +62,7 @@ irds_tag=${QRELS[$SLURM_ARRAY_TASK_ID]}
 for model_dir in "${MODEL_DIRS[@]}"; do
     echo "Processing model: $model_dir"
     output_dir=${HOME}/indices/beir-corpus/${model_dir##*/}
-    mkdir -p result_batch/${model_dir##*/}-10k
+    mkdir -p result_batch/${model_dir##*/}
 
     python -m tevatron.retriever.driver.search \
         --query_reps $output_dir/query_emb.${DATASET}.pkl \
@@ -75,5 +80,5 @@ for model_dir in "${MODEL_DIRS[@]}"; do
 
     short_name=$(basename "$DATASET" | cut -c6-8)
     echo "${model_dir##*/} | ${short_name} | $result"
-    echo "${short_name} | $result" > result_batch/${model_dir##*/}-10k/${SLURM_ARRAY_TASK_ID}.txt
+    echo "${short_name} | $result" > result_batch/${model_dir##*/}/${SLURM_ARRAY_TASK_ID}.txt
 done

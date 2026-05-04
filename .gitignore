@@ -11,6 +11,7 @@ logs/
 # Experiment artifacts
 wandb/
 result.*
+result_batch/
 result/*.log
 **/result.*
 
