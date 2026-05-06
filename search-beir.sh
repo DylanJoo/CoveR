@@ -61,7 +61,7 @@ irds_tag=${QRELS[$SLURM_ARRAY_TASK_ID]}
 
 for model_dir in "${MODEL_DIRS[@]}"; do
     echo "Processing model: $model_dir"
-    output_dir=${HOME}/indices/beir-corpus/${model_dir##*/}
+    output_dir=${HOME}/scratch/beir-corpus/${model_dir##*/}
     mkdir -p result_batch/${model_dir##*/}
 
     python -m tevatron.retriever.driver.search \

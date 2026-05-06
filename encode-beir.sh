@@ -20,7 +20,7 @@ MODEL_DIRS=(
 # DylanJHJ/modernbert-base.cover-5k
 # DylanJHJ/modernbert-base.scope-5k
 # DylanJHJ/modernbert-base.scope-10k
-# DylanJHJ/modernbert-base.relevance-25k # worse than 10k
+# DylanJHJ/modernbert-base.relevance-25k     # worse than 10k
 # DylanJHJ/modernbert-base.cover.covcon-only # worse than cover
 DylanJHJ/modernbert-base.cover-10k
 DylanJHJ/modernbert-base.relevance-scope-flt-10k
