@@ -17,8 +17,8 @@ module use /appl/local/training/modules/AI-20241126/
 export TOKENIZERS_PARALLELISM=false
 export CRUX_ROOT=${HOME}/datasets/crux
 
-lr=1e-4
-model_dir=${HOME}/models/CoveR/relevance-ms-pft.cover-5k
+lr=5e-5
+model_dir=${HOME}/models/CoveR/relevance-scope-flt-pft.cover-10k
 
 mkdir -p ${model_dir}
 cp $0 ${model_dir}
@@ -26,8 +26,7 @@ cp $0 ${model_dir}
 GPUS_PER_NODE=4
 NUM_NODES=1
 NUM_PROCESSES=$(expr $NUM_NODES \* $GPUS_PER_NODE)
-# PRETRAINED=DylanJHJ/modernbert-base.relevance-10k
-PRETRAINED=DylanJHJ/modernbert-base.relevance-25k
+PRETRAINED=DylanJHJ/modernbert-base.relevance-scope-flt-10k
 
 # Start experiments
 srun singularity exec $SIF \
@@ -64,8 +63,8 @@ srun singularity exec $SIF \
     --dataloader_num_workers 8 \
     --lr_scheduler_type 'cosine' \
     --weight_decay 0.01 \
-    --max_steps 5000 \
-    --warmup_steps 500 \
+    --max_steps 10000 \
+    --warmup_steps 1000 \
     --logging_steps 10 \
     --overwrite_output_dir \
     --run_name ${model_dir##*/}

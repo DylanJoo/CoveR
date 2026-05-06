@@ -18,7 +18,7 @@ export TOKENIZERS_PARALLELISM=false
 export CRUX_ROOT=${HOME}/datasets/crux
 
 lr=1e-4
-model_dir=${HOME}/models/CoveR/relevance-ms-pft.cover-5k
+model_dir=${HOME}/models/CoveR/relevance-scope-flt-pft.cover-5k
 
 mkdir -p ${model_dir}
 cp $0 ${model_dir}
@@ -26,8 +26,7 @@ cp $0 ${model_dir}
 GPUS_PER_NODE=4
 NUM_NODES=1
 NUM_PROCESSES=$(expr $NUM_NODES \* $GPUS_PER_NODE)
-# PRETRAINED=DylanJHJ/modernbert-base.relevance-10k
-PRETRAINED=DylanJHJ/modernbert-base.relevance-25k
+PRETRAINED=DylanJHJ/modernbert-base.relevance-scope-flt-10k
 
 # Start experiments
 srun singularity exec $SIF \

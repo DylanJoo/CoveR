@@ -2,13 +2,13 @@
 #SBATCH --job-name=rel
 #SBATCH --output=logs/rel.out
 #SBATCH --error=logs/rel.err
-#SBATCH --partition=dev-g
+#SBATCH --partition=small-g
 #SBATCH --ntasks-per-node=1
 #SBATCH --nodes=1                   # Total number of nodes 
 #SBATCH --cpus-per-task=16
-#SBATCH --gpus-per-node=2           # Allocate one gpu per MPI rank
+#SBATCH --gpus-per-node=4           # Allocate one gpu per MPI rank
 #SBATCH --mem=128G
-#SBATCH --time=2:00:00             # Run time (d-hh:mm:ss)
+#SBATCH --time=24:00:00             # Run time (d-hh:mm:ss)
 #SBATCH --account=project_465002532 # Project for billing
 
 module use /appl/local/csc/modulefiles/
@@ -16,11 +16,12 @@ module use /appl/local/training/modules/AI-20241126/
 export TOKENIZERS_PARALLELISM=false
 
 lr=1e-4
-model_dir=${HOME}/models/CoveR/unsupervised.relevance-10k
+model_dir=${HOME}/models/CoveR/unsupervised.relevance-10k-scope-flt
 
 mkdir -p ${model_dir}
+cp $0 ${model_dir}
 
-GPUS_PER_NODE=2
+GPUS_PER_NODE=4
 NUM_NODES=1
 NUM_PROCESSES=$(expr $NUM_NODES \* $GPUS_PER_NODE)
 PRETRAINED=nomic-ai/modernbert-embed-base-unsupervised
@@ -35,9 +36,10 @@ srun singularity exec $SIF \
     --output_dir ${model_dir} \
     --model_name_or_path $PRETRAINED \
     --save_steps 1000 \
-    --dataset_name Tevatron/msmarco-passage-new \
-    --corpus_name Tevatron/msmarco-passage-corpus-new \
-    --per_device_train_batch_size 32 \
+    --dataset_name DylanJHJ/crux-researchy \
+    --corpus_name DylanJHJ/crux-researchy-corpus \
+    --dataset_split flatten.pos_5.neg_1 \
+    --per_device_train_batch_size 16 \
     --train_group_size 8 \
     --prediction_loss_only True \
     --bf16 --pooling mean --normalize \
@@ -47,7 +49,7 @@ srun singularity exec $SIF \
     --eval_steps 1000 \
     --learning_rate $lr \
     --query_max_len 32 \
-    --passage_max_len 256 \
+    --passage_max_len 512 \
     --dataloader_num_workers 4 \
     --lr_scheduler_type 'cosine' \
     --weight_decay 0.01 \

@@ -54,7 +54,7 @@ srun singularity exec $SIF \
     --contrastive_lambda 1.0 \
     --sq_contrastive_lambda 0.0 \
     --covdistil_method KLD \
-    --covdistil_lambda 0.1 \
+    --covdistil_lambda 0.0 \
     --eval_steps 500 \
     --learning_rate $lr \
     --query_max_len 180 \
