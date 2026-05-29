@@ -206,16 +206,16 @@ accelerate launch -m \
     --weight_decay 0.01 \
     --exclude_title
 ```
-The training script is at `slurm/unsupervised.msmarco.sh`; the SCOPE-flatten variant is at `slurm/unsupervised.scope-flt.sh`.
-
-For the SCOPE-flatten setting, change the dataset and set `passage_max_len` to 512. The total batch size remains 64 (16 per device × 4 processes).
+Also, the training scripts can be found: `slurm/unsupervised.msmarco.sh`; and `slurm/unsupervised.scope-flt.sh` for the SCOPE-flatten variant.
+> For the SCOPE-flatten setting, change the dataset and set `passage_max_len` to 512. The total batch size remains 64 (16 per device × 4 processes).
 
 ### Coverage-based training (CoveR)
-Train on SCOPE using coverage-based contrastive learning. Set `model_name_or_path` to the PFT checkpoint (for the PFT → CoveR pipeline) or a raw unsupervised base model.
+Train on SCOPE using coverage-based contrastive learning. Set `model_name_or_path` to the PFT checkpoint (for the PFT → CoveR pipeline) or a raw unsupervised base model. For example,
+**CoveR (w/ pft on msmarco)** - train from our reproduced relevance checkpoints: `dylanjhj/modernbert-base.relevance-10k` as the initilization.
+**SCOPE (w/o pFT)** — train directly from the unsupervised base: 
 
-The trainer supports the full research request **and** decomposed sub-queries as dual query views (`--subquery_prefix`). The CovDistil KLD loss can be enabled via `--covdistil_lambda`.
-
-**SCOPE w/o PFT** — train directly from the unsupervised base:
+The CovDistil KLD loss can be enabled via `--covdistil_lambda` with the control hyperparameter `--covdistil_lambda`
+Also, the training scripts can be found: `slurm/relevance-ms-pft.scope-5k.sh`; the script without PFT is at `slurm/unsupervised.scope-5k.sh`.
 
 ```bash
 lr=1e-4
@@ -261,7 +261,6 @@ accelerate launch -m \
     --overwrite_output_dir \
     --run_name ${model_dir##*/}
 ```
-The two-stage (PFT → CoveR) training script is at `slurm/relevance-ms-pft.scope-5k.sh`; the script without PFT is at `slurm/unsupervised.scope-5k.sh`.
 
 ### Data curation
 The training data is split into several coverage-bucket subsets. `pos_half.neg_zero` yields the best results among them.
