@@ -1,25 +1,21 @@
 # CoveR
 
-**CoveR** is the codebase for _"Search for Coverage: Learning Coverage-Aware Retrieval with Augmented Sub-Question Answerability"_.
+The codebase for _"Search for Coverage: Learning Coverage-Aware Retrieval with Augmented Sub-Question Answerability"_.
 
-The goal is to train dense retrieval models that maximise **information coverage** — the fraction of a request's sub-topics that the retrieved documents collectively address — rather than simply optimising for relevance-based ranking.
-
-Standard dense retrievers are trained on relevance-annotated pairs (e.g., MS-MARCO). For complex, research-style requests that span multiple sub-aspects, a document may be broadly relevant but only partially address the request's sub-topics. CoveR instead trains on coverage-labelled data derived from [CRUX-Researchy](https://huggingface.co/datasets/DylanJHJ/crux-researchy), where each document is judged on how many of a request's sub-questions it can answer.
+Standard dense retrievers are trained on relevance-annotated pairs (e.g., MS-MARCO). For complex, research-style requests that span multiple sub-aspects, a document may be broadly relevant but only partially address the request's sub-topics. CoveR instead trains on coverage-labelled data from [SCOPE](https://huggingface.co/datasets/DylanJHJ/SCOPE), where each document is sampled with how many of a request's sub-questions it can answer.
 
 ---
-
 
 ## Overview
 
 | | |
 |---|---|
 | [Installation](#installation)                                                                 | Setup and package dependencies |
+| [Usage](#usage)                                                                               | Encoding queries and documents with the model |
 | [Models & datasets](#models--datasets-huggingface)                                            | HuggingFace checkpoints and training corpora |
-| [Evaluation](#evaluation)                                                                     | BEIR · CRUX-MDS · MS-MARCO passage · NeuCLIR |
-| [Pre-fine-tuning (PFT)](#1-pre-fine-tuning-pft--optional)                                     | Contrastive training on MS-MARCO (relevance-based) |
-| [Coverage-based training (CoveR)](#2-coverage-based-training-cover)                           | Coverage-bucket sampling pairs from CRUX-Researchy |
-| [Sub-question augmented training (CoveR + SQ)](#3-sub-question-augmented-training-cover--sq)  | CoveR + sub-question augmentation (w/ or w/o PFT) |
-| [Two-stage training](#4-two-stage-training)                                                   | Flat relevance CRUX fine-tuning → coverage fine-tuning |
+| [Evaluation](#evaluation)                                                                     | BEIR · CRUX-MDS · NeuCLIR |
+| [Pre-fine-tuning (PFT)](#pre-fine-tuning-pft)                                                 | Contrastive training on MS-MARCO (relevance-based) |
+| [Coverage-based training (CoveR)](#coverage-based-training-cover)                             | Coverage-bucket sampling pairs from SCOPE |
 | [Data curation](#data-curation)                                                               | Coverage-bucket sampling · sub-question generation · MS-MARCO sampling |
 
 ## Installation
@@ -40,22 +36,6 @@ git lfs install
 git clone https://huggingface.co/datasets/DylanJHJ/crux
 git clone https://huggingface.co/datasets/DylanJHJ/crux-mds-corpus
 ```
----
-## Models & datasets (HuggingFace)
-
-| Artifact | HF identifier |
-|---|---|
-| Unsupervised            | `nomic-ai/modernbert-embed-base-unsupervised` |
-| Relevance               | `DylanJHJ/modernbert-base.relevance-10k` |
-| CoveR (with pFT)        | `DylanJHJ/DylanJHJ/modernbert-base.cover-5k` |
-| Training data           | `DylanJHJ/crux-researchy`, `DylanJHJ/crux-researchy-new` |
-| Training corpus         | `DylanJHJ/crux-researchy-corpus` |
-| BEIR corpus             | `DylanJHJ/beir-corpus` |
-| BEIR queries            | `DylanJHJ/beir` |
-| NeuCLIR corpus          | |
-| NeuCLIR queries         | |
-| CRUX corpus             | `DylanJHJ/crux-mds-corpus` |
-| CRUX queries            | `DylanJHJ/crux` |
 
 ---
 ## Usage
@@ -74,7 +54,6 @@ DOC_PREFIX   = "search_document: "
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model     = AutoModel.from_pretrained(MODEL_NAME).eval()
 
-
 def mean_pool_normalize(hidden_states: torch.Tensor, attention_mask: torch.Tensor) -> torch.Tensor:
     mask = attention_mask.unsqueeze(-1).bool()
     masked = hidden_states.masked_fill(~mask, 0.0)
@@ -89,7 +68,6 @@ def encode(texts: list[str], prefix: str, max_length: int = 512) -> torch.Tensor
     with torch.no_grad():
         output = model(**batch, return_dict=True)
     return mean_pool_normalize(output.last_hidden_state, batch["attention_mask"])
-
 
 query = [
     "I need a report on suicide rates in Japan during the COVID-19 pandemic. "
@@ -110,9 +88,82 @@ scores = (q_emb @ d_emb.T).squeeze(0)                 # (3,)
 ```
 
 ---
+## Models & datasets (HuggingFace)
+
+| Artifact | HF identifier |
+|---|---|
+| Unsupervised            | `nomic-ai/modernbert-embed-base-unsupervised` |
+| Relevance               | `DylanJHJ/modernbert-base.relevance-10k` |
+| CoveR (with pFT)        | `DylanJHJ/modernbert-base.cover-5k` |
+| Training data           | `DylanJHJ/crux-researchy`, `DylanJHJ/crux-researchy-new` |
+| Training corpus         | `DylanJHJ/crux-researchy-corpus` |
+| BEIR corpus             | `DylanJHJ/beir-corpus` |
+| BEIR queries            | `DylanJHJ/beir` |
+| NeuCLIR corpus (mt)     | `https://huggingface.co/datasets/neuclir/neuclir1/viewer/mt_docs` |
+| NeuCLIR queries         | |
+| CRUX corpus             | `DylanJHJ/crux-mds-corpus` |
+| CRUX queries            | `DylanJHJ/crux` |
+
+---
 ## Evaluation
 
-### NeuCLIR and CRUX
+See the following scripts for details: `encode-beir.sh` and `search-beir.sh`; `encode-neuclir.sh` and `search-neuclir.sh`
+
+### BEIR
+
+Encode the corpus (two shards per dataset) and queries, then retrieve and evaluate with `ir_measures`.
+
+```bash
+MODEL=DylanJHJ/modernbert-base.cover-5k
+OUTPUT_DIR=${HOME}/scratch/beir-corpus/${MODEL##*/}
+DATASET=beir.nfcorpus   # replace with target dataset
+
+# Encode corpus (2 shards)
+for SHARD_ID in 0 1; do
+    python -m tevatron.retriever.driver.encode \
+        --output_dir=temp \
+        --tokenizer_name answerdotai/ModernBERT-base \
+        --model_name_or_path $MODEL \
+        --per_device_eval_batch_size 2048 \
+        --passage_max_len 512 \
+        --pooling mean --normalize --bf16 \
+        --passage_prefix "search_document: " \
+        --dataset_name DylanJHJ/beir-corpus \
+        --dataset_split $DATASET \
+        --encode_output_path $OUTPUT_DIR/corpus_emb.${DATASET}-${SHARD_ID}.pkl \
+        --dataset_shard_index ${SHARD_ID} \
+        --dataset_number_of_shards 2
+done
+
+# Encode queries
+python -m tevatron.retriever.driver.encode \
+    --output_dir=temp \
+    --tokenizer_name answerdotai/ModernBERT-base \
+    --model_name_or_path $MODEL \
+    --pooling mean --normalize --bf16 \
+    --query_prefix "search_query: " \
+    --per_device_eval_batch_size 128 \
+    --dataset_name DylanJHJ/beir-subset \
+    --dataset_split $DATASET \
+    --encode_output_path $OUTPUT_DIR/query_emb.${DATASET}.pkl \
+    --query_max_len 256 \
+    --encode_is_query
+
+# Retrieve and evaluate
+python -m tevatron.retriever.driver.search \
+    --query_reps $OUTPUT_DIR/query_emb.${DATASET}.pkl \
+    --passage_reps "$OUTPUT_DIR/corpus_emb.${DATASET}*pkl" \
+    --depth 100 --batch_size -1 --save_text \
+    --save_ranking_to $OUTPUT_DIR/${DATASET}.run
+
+python -m tevatron.utils.format.convert_result_to_trec \
+    --input $OUTPUT_DIR/${DATASET}.run \
+    --output $OUTPUT_DIR/${DATASET}.trec
+
+python -m ir_measures beir/<dataset-name> $OUTPUT_DIR/${DATASET}.trec nDCG@10
+```
+
+### NeuCLIR
 Follow CRUX, we use the provided evaluation script to compute alpha ndcg and coverage at 10.
 ```bash
 CRUX_ROOT=${HOME}/datasets/crux
@@ -158,7 +209,7 @@ The training script is at `slurm/unsupervised.msmarco.sh`; the SCOPE-flatten var
 For the SCOPE-flatten setting, change the dataset and set `passage_max_len` to 512. The total batch size remains 64 (16 per device × 4 processes).
 
 ### 2. Coverage-based training (CoveR)
-Train on CRUX-Researchy using coverage-based contrastive learning. Set `model_name_or_path` to the PFT checkpoint (for the PFT → CoveR pipeline) or a raw unsupervised base model.
+Train on SCOPE using coverage-based contrastive learning. Set `model_name_or_path` to the PFT checkpoint (for the PFT → CoveR pipeline) or a raw unsupervised base model.
 
 The trainer supports the full research request **and** decomposed sub-queries as dual query views (`--subquery_prefix`). The CovDistil KLD loss can be enabled via `--covdistil_lambda`.
 
@@ -210,14 +261,12 @@ accelerate launch -m \
 ```
 The two-stage (PFT → CoveR) training script is at `slurm/relevance-ms-pft.scope-5k.sh`; the script without PFT is at `slurm/unsupervised.scope-5k.sh`.
 
-### 3. Sub-question augmented training (CoveR + SQ)
+### 3. Sub-question augmented training data
 The training data is split into several coverage-bucket subsets. `pos_half.neg_zero` yields the best results among them.
 See the HuggingFace repository for dataset access. Note that the corpus is sourced from ClueWeb Category B, which requires a separate license.
 
 | Split | Positives | Negatives |
 |---|---|---|
-| `pos_20.neg_51` | top-20 by rank | rank 51+ |
-| `pos_20.neg_51.filtered` | top-20, zero-coverage excluded | rank 51+ |
 | `pos_high.neg_zero` | cov ≥ 0.75 | cov = 0 |
 | `pos_high.neg_low` | cov ≥ 0.75 | 0 ≤ cov < 0.25 |
 | `pos_high.neg_quarter` | cov ≥ 0.75 | 0 ≤ cov < 0.5 |

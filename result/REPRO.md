@@ -96,5 +96,5 @@
 # NeuCLIR
 | cover-5k            | neuclir24-test.trec | P@10 | 0.8421 | nDCG@10 | 0.8611 | alpha_nDCG@10 | 0.5755 | Cov@10 | 0.6722 | 
 | relevance-10k       | neuclir24-test.trec | P@10 | 0.6947 | nDCG@10 | 0.7230 | alpha_nDCG@10 | 0.4594 | Cov@10 | 0.5540 | 
-| scope-10k           | neuclir24-test.trec | P@10 | 0.8474 | nDCG@10 | 0.8517 | alpha_nDCG@10 | 0.5387 | Cov@10 | 0.6403 | # Rerun
-| scope-flt-cover-5k  | neuclir24-test.trec | P@10 | 0.8368 | nDCG@10 | 0.8619 | alpha_nDCG@10 | 0.5589 | Cov@10 | 0.6544 | # Use the old one
+<!-- | scope-10k           | neuclir24-test.trec | P@10 | 0.8474 | nDCG@10 | 0.8517 | alpha_nDCG@10 | 0.5387 | Cov@10 | 0.6403 | # Rerun -->
+<!-- | scope-flt-cover-5k  | neuclir24-test.trec | P@10 | 0.8368 | nDCG@10 | 0.8619 | alpha_nDCG@10 | 0.5589 | Cov@10 | 0.6544 | # Use the old one -->
