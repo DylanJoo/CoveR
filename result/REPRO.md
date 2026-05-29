@@ -32,36 +32,6 @@
 | modernbert-base.scope-5k | sci | nDCG@10 | 0.2024 |
 | modernbert-base.scope-5k | avg | nDCG@10 | 0.4835 |
 |---|---|---|---|
-| modernbert-base.scope-10k | arg | nDCG@10 | 0.3252 |  
-| modernbert-base.scope-10k | sci | nDCG@10 | 0.7130 | 
-| modernbert-base.scope-10k | tre | nDCG@10 | 0.7289 | 
-| modernbert-base.scope-10k | web | nDCG@10 | 0.2091 | 
-| modernbert-base.scope-10k | cli | nDCG@10 | 0.2458 | 
-| modernbert-base.scope-10k | dbp | nDCG@10 | 0.3869 | 
-| modernbert-base.scope-10k | fev | nDCG@10 | 0.7645 | 
-| modernbert-base.scope-10k | fiq | nDCG@10 | 0.4042 | 
-| modernbert-base.scope-10k | hot | nDCG@10 | 0.6082 | 
-| modernbert-base.scope-10k | nfc | nDCG@10 | 0.3487 | 
-| modernbert-base.scope-10k | nq  | nDCG@10 | 0.5253 | 
-| modernbert-base.scope-10k | quo | nDCG@10 | 0.8763 | 
-| modernbert-base.scope-10k | sci | nDCG@10 | 0.2047 | 
-| modernbert-base.scope-10k | avg | nDCG@10 | 0.4878 |
-|---|---|---|---|
-| modernbert-base.relevance-25k | arg | nDCG@10	| 0.3473 | 
-| modernbert-base.relevance-25k | sci | nDCG@10	| 0.7077 |
-| modernbert-base.relevance-25k | tre | nDCG@10	| 0.8114 |
-| modernbert-base.relevance-25k | web | nDCG@10	| 0.2607 |
-| modernbert-base.relevance-25k | cli | nDCG@10	| 0.2576 |
-| modernbert-base.relevance-25k | dbp | nDCG@10	| 0.3817 |
-| modernbert-base.relevance-25k | fev | nDCG@10	| 0.7661 |
-| modernbert-base.relevance-25k | fiq | nDCG@10	| 0.3983 |
-| modernbert-base.relevance-25k | hot | nDCG@10	| 0.6249 |
-| modernbert-base.relevance-25k | nfc | nDCG@10	| 0.3355 |
-| modernbert-base.relevance-25k | nq  | nDCG@10	| 0.5579 |
-| modernbert-base.relevance-25k | quo | nDCG@10	| 0.8533 |
-| modernbert-base.relevance-25k | sci | nDCG@10	| 0.1807 |
-| modernbert-base.relevance-25k | avg | nDCG@10 | 0.4987 |
-|---|---|---|---|
 | modernbert-base.cover-5k | arg | nDCG@10	| 0.3669 |  
 | modernbert-base.cover-5k | sci | nDCG@10	| 0.7005 |
 | modernbert-base.cover-5k | tre | nDCG@10	| 0.8105 |
@@ -77,17 +47,54 @@
 | modernbert-base.cover-5k | sci | nDCG@10	| 0.1987 |
 | modernbert-base.cover-5k | avg | nDCG@10  | 0.5024 |
 |---|---|---|---|
-| modernbert-base.cover.covcon-only | arg | nDCG@10	| 0.3695 |  
-| modernbert-base.cover.covcon-only | sci | nDCG@10	| 0.7063 | 
-| modernbert-base.cover.covcon-only | tre | nDCG@10	| 0.7545 | 
-| modernbert-base.cover.covcon-only | web | nDCG@10	| 0.2462 | 
-| modernbert-base.cover.covcon-only | cli | nDCG@10	| 0.2616 | 
-| modernbert-base.cover.covcon-only | dbp | nDCG@10	| 0.3915 | 
-| modernbert-base.cover.covcon-only | fev | nDCG@10	| 0.7742 | 
-| modernbert-base.cover.covcon-only | fiq | nDCG@10	| 0.3987 | 
-| modernbert-base.cover.covcon-only | hot | nDCG@10	| 0.6187 | 
-| modernbert-base.cover.covcon-only | nfc | nDCG@10	| 0.3453 | 
-| modernbert-base.cover.covcon-only | nq  | nDCG@10	| 0.5472 | 
-| modernbert-base.cover.covcon-only | quo | nDCG@10	| 0.8618 | 
-| modernbert-base.cover.covcon-only | sci | nDCG@10	| 0.1974 | 
-| modernbert-base.cover.covcon-only | avg | nDCG@10 | 0.4979 |
+| modernbert-base.cover-10k | arg | nDCG@10	| 0.3566 | 
+| modernbert-base.cover-10k | sci | nDCG@10	| 0.7009 |
+| modernbert-base.cover-10k | tre | nDCG@10	| 0.8073 |
+| modernbert-base.cover-10k | web | nDCG@10	| 0.2658 |
+| modernbert-base.cover-10k | cli | nDCG@10	| 0.2456 |
+| modernbert-base.cover-10k | dbp | nDCG@10	| 0.3850 |
+| modernbert-base.cover-10k | fev | nDCG@10	| 0.7865 |
+| modernbert-base.cover-10k | fiq | nDCG@10	| 0.4006 |
+| modernbert-base.cover-10k | hot | nDCG@10	| 0.6145 |
+| modernbert-base.cover-10k | nfc | nDCG@10	| 0.3443 |
+| modernbert-base.cover-10k | nq  | nDCG@10	| 0.5614 |
+| modernbert-base.cover-10k | quo | nDCG@10	| 0.8196 |
+| modernbert-base.cover-10k | sci | nDCG@10	| 0.1931 |
+| modernbert-base.cover-10k | avg | nDCG@10 | 0.4986 |
+|---|---|---|---|
+| modernbert-base.cover-5k | arg | nDCG@10 | 0.3673 |
+| modernbert-base.cover-5k | sci | nDCG@10 | 0.7051 |
+| modernbert-base.cover-5k | tre | nDCG@10 | 0.7739 |
+| modernbert-base.cover-5k | web | nDCG@10 | 0.2571 |
+| modernbert-base.cover-5k | cli | nDCG@10 | 0.2603 |
+| modernbert-base.cover-5k | dbp | nDCG@10 | 0.3909 |
+| modernbert-base.cover-5k | fev | nDCG@10 | 0.7779 |
+| modernbert-base.cover-5k | fiq | nDCG@10 | 0.4009 |
+| modernbert-base.cover-5k | hot | nDCG@10 | 0.6217 |
+| modernbert-base.cover-5k | nfc | nDCG@10 | 0.3468 |
+| modernbert-base.cover-5k | nq  | nDCG@10 | 0.5585 |
+| modernbert-base.cover-5k | quo | nDCG@10 | 0.8507 |
+| modernbert-base.cover-5k | sci | nDCG@10 | 0.1986 |
+| modernbert-base.cover-5k | avg | nDCG@10 | 0.5007 |
+|---|---|---|---|
+| modernbert-base.scope-flt-cover-5k | arg | nDCG@10 | 0.3508 |
+| modernbert-base.scope-flt-cover-5k | sci | nDCG@10 | 0.7032 |
+| modernbert-base.scope-flt-cover-5k | tre | nDCG@10 | 0.6566 |
+| modernbert-base.scope-flt-cover-5k | web | nDCG@10 | 0.2001 |
+| modernbert-base.scope-flt-cover-5k | cli | nDCG@10 | 0.2611 |
+| modernbert-base.scope-flt-cover-5k | dbp | nDCG@10 | 0.3693 |
+| modernbert-base.scope-flt-cover-5k | fev | nDCG@10 | 0.7980 |
+| modernbert-base.scope-flt-cover-5k | fiq | nDCG@10 | 0.3868 |
+| modernbert-base.scope-flt-cover-5k | hot | nDCG@10 | 0.6144 |
+| modernbert-base.scope-flt-cover-5k | nfc | nDCG@10 | 0.3325 |
+| modernbert-base.scope-flt-cover-5k | nq  | nDCG@10 | 0.5035 |
+| modernbert-base.scope-flt-cover-5k | quo | nDCG@10 | 0.8571 |
+| modernbert-base.scope-flt-cover-5k | sci | nDCG@10 | 0.1988 |
+| modernbert-base.scope-flt-cover-5k | avg | nDCG@10 | 0.4794 |
+|---|---|---|---|
+
+# NeuCLIR
+| cover-5k            | neuclir24-test.trec | P@10 | 0.8421 | nDCG@10 | 0.8611 | alpha_nDCG@10 | 0.5755 | Cov@10 | 0.6722 | 
+| relevance-10k       | neuclir24-test.trec | P@10 | 0.6947 | nDCG@10 | 0.7230 | alpha_nDCG@10 | 0.4594 | Cov@10 | 0.5540 | 
+| scope-10k           | neuclir24-test.trec | P@10 | 0.8474 | nDCG@10 | 0.8517 | alpha_nDCG@10 | 0.5387 | Cov@10 | 0.6403 | # Rerun
+| scope-flt-cover-5k  | neuclir24-test.trec | P@10 | 0.8368 | nDCG@10 | 0.8619 | alpha_nDCG@10 | 0.5589 | Cov@10 | 0.6544 | # Use the old one

@@ -6,7 +6,7 @@
 #SBATCH --gres=gpu:nvidia_rtx_a6000:1
 #SBATCH --ntasks-per-node=1        
 #SBATCH --nodes=1                
-#SBATCH --array=0
+#SBATCH --array=0-2%2
 #SBATCH --mem=32G
 #SBATCH --time=2-00:00:00
 
@@ -16,11 +16,15 @@ initconda
 conda activate inference 
 
 MODEL_DIRS=(
-DylanJHJ/modernbert-base.relevance-10k
-DylanJHJ/modernbert-base.scope-10k
-DylanJHJ/modernbert-base.cover-5k
-# DylanJHJ/modernbert-base.cover.covcon-only
-# DylanJHJ/modernbert-base.cover-10k
+# DylanJHJ/modernbert-base.scope-5k
+# DylanJHJ/modernbert-base.scope-10k
+# DylanJHJ/modernbert-base.cover-5k # R
+# DylanJHJ/modernbert-base.relevance-10k # R
+# DylanJHJ/modernbert-base.scope-flt-cover-5k
+# DylanJHJ/modernbert-base.scope-flt-cover-10k
+/home/dju/models/sigir26-submit/scope-flt/ce_1.0-selfdistil_0.0.scope-flt
+/home/dju/models/sigir26-submit/scope-flt/ce_1.0-selfdistil_0.1.scope-flt
+/home/dju/models/ablation.two-stage/modernbert-two-stage-crux-researchy-pos_half.neg_zero.b64_n512.1e-4.crux-researchy.request
 )
 
 LANGS=(
@@ -34,7 +38,7 @@ for model_dir in "${MODEL_DIRS[@]}"; do
     output_dir=${HOME}/scratch/neuclir1/${model_dir##*/}
     mkdir -p $output_dir
 
-    for SHARD_ID in 0 1 2 3;do
+    for SHARD_ID in 0 1 2 3 4;do
         echo Encoding NeuCLIR1 corpus $SHARD_ID
         python -m tevatron.retriever.driver.encode \
             --output_dir=temp \
@@ -47,7 +51,7 @@ for model_dir in "${MODEL_DIRS[@]}"; do
             --dataset_path ${HOME}/datasets/neuclir1/${LANG}.processed_output.jsonl.gz \
             --encode_output_path $output_dir/corpus_emb.${LANG}-${SHARD_ID}.pkl \
             --dataset_shard_index ${SHARD_ID} \
-            --dataset_number_of_shards 4
+            --dataset_number_of_shards 5
     done
 
     topic_path=/home/dju/datasets/crux/crux-neuclir/topic/neuclir24-test-request.jsonl

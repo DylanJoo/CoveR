@@ -16,13 +16,13 @@ conda activate inference
 
 MODEL_DIRS=(
 # DylanJHJ/modernbert-base.relevance
-# DylanJHJ/modernbert-base.cover-5k
 # DylanJHJ/modernbert-base.scope-5k
 # DylanJHJ/modernbert-base.scope-10k
 # DylanJHJ/modernbert-base.relevance-25k
 # DylanJHJ/modernbert-base.cover.covcon-only
-DylanJHJ/modernbert-base.cover-10k
-DylanJHJ/modernbert-base.relevance-scope-flt-10k
+DylanJHJ/modernbert-base.cover-5k
+DylanJHJ/modernbert-base.scope-flt-cover-10k
+DylanJHJ/modernbert-base.scope-flt-cover-5k
 )
 
 DATASETS=(
