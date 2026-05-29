@@ -24,18 +24,20 @@ Standard dense retrievers are trained on relevance-annotated pairs (e.g., MS-MAR
 # Install Tevatron
 pip install transformers datasets peft
 pip install deepspeed accelerate
-pip install faiss-cpu
+pip install faiss-cpu ir_datasets ir_measures
 cd tevatron && pip install -e . && cd ..
 
-# Install the CRUX evaluation toolkit
-pip install crux   # or: git clone https://github.com/DylanJHJ/crux && pip install -e crux/
+# Install the CRUX evaluation toolkit and download the datasets
+git clone https://github.com/DylanJHJ/crux && pip install -e crux/
 
-# Download CRUX evaluation datasets 
 cd ${HOME}/datasets/
 git lfs install
 git clone https://huggingface.co/datasets/DylanJHJ/crux
 git clone https://huggingface.co/datasets/DylanJHJ/crux-mds-corpus
 ```
+
+> For BEIR corpus, we use `ir_datasets` API at [here](https://ir-datasets.com/beir.html)
+> For NeuCLIR corpus, we use the [English translation provided by the organizer team](https://huggingface.co/datasets/neuclir/neuclir1/viewer/mt_docs).
 
 ---
 ## Usage
@@ -178,7 +180,7 @@ The other reproduced baselines can be found in [runs-and-qrels](http://) _(link 
 ---
 ## Training pipeline
 
-### 1. Pre-fine-tuning (PFT) — MS-MARCO relevance baseline (`DylanJHJ/modernbert-base.relevance-10k`)
+### Pre-fine-tuning (PFT)
 Fine-tune a base model on MS-MARCO passage retrieval as a relevance baseline. This stage also serves as pre-fine-tuning (PFT) for coverage training — the resulting checkpoint is used as the starting point for subsequent coverage training.
 
 ```bash
@@ -208,7 +210,7 @@ The training script is at `slurm/unsupervised.msmarco.sh`; the SCOPE-flatten var
 
 For the SCOPE-flatten setting, change the dataset and set `passage_max_len` to 512. The total batch size remains 64 (16 per device × 4 processes).
 
-### 2. Coverage-based training (CoveR)
+### Coverage-based training (CoveR)
 Train on SCOPE using coverage-based contrastive learning. Set `model_name_or_path` to the PFT checkpoint (for the PFT → CoveR pipeline) or a raw unsupervised base model.
 
 The trainer supports the full research request **and** decomposed sub-queries as dual query views (`--subquery_prefix`). The CovDistil KLD loss can be enabled via `--covdistil_lambda`.
@@ -261,7 +263,7 @@ accelerate launch -m \
 ```
 The two-stage (PFT → CoveR) training script is at `slurm/relevance-ms-pft.scope-5k.sh`; the script without PFT is at `slurm/unsupervised.scope-5k.sh`.
 
-### 3. Sub-question augmented training data
+### Data curation
 The training data is split into several coverage-bucket subsets. `pos_half.neg_zero` yields the best results among them.
 See the HuggingFace repository for dataset access. Note that the corpus is sourced from ClueWeb Category B, which requires a separate license.
 
