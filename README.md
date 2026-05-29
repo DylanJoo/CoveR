@@ -92,22 +92,27 @@ scores = (q_emb @ d_emb.T).squeeze(0)                 # (3,)
 ---
 ## Models & datasets (HuggingFace)
 
-| Artifact | HF identifier |
+| Artifact                | HF identifier |
 |---|---|
 | Unsupervised            | `nomic-ai/modernbert-embed-base-unsupervised` |
 | Relevance               | `DylanJHJ/modernbert-base.relevance-10k` |
 | CoveR (with pFT)        | `DylanJHJ/modernbert-base.cover-5k` |
-| Training data           | `DylanJHJ/crux-researchy`, `DylanJHJ/crux-researchy-new` |
-| Training corpus         | `DylanJHJ/crux-researchy-corpus` |
-| BEIR corpus             | `DylanJHJ/beir-corpus` |
-| BEIR queries            | `DylanJHJ/beir` |
-| NeuCLIR corpus (mt)     | `https://huggingface.co/datasets/neuclir/neuclir1/viewer/mt_docs` |
-| NeuCLIR queries         | |
-| CRUX corpus             | `DylanJHJ/crux-mds-corpus` |
-| CRUX queries            | `DylanJHJ/crux` |
+| Training data           | `DylanJHJ/scope` |
+| Training corpus         | `DylanJHJ/scope-corpus` |
+| Unsupervised            | `nomic-ai/modernbert-embed-base-unsupervised` |
+| Relevance               | `DylanJHJ/modernbert-base.relevance-10k` |
+| CoveR (with pFT)        | `DylanJHJ/modernbert-base.cover-5k` |
 
 ---
 ## Evaluation
+| Dataset                 | HF identifier | NOTE |
+|---|---|---|
+| BEIR queries            | `DylanJHJ/beir`            | Source: `ir_datasets` |
+| BEIR corpus             | `DylanJHJ/beir-corpus`     | Source: `ir_datasets` |
+| CRUX corpus             | `DylanJHJ/crux-mds-corpus` | Source: [CRUX repo](https://github.com/DylanJoo/crux)   |
+| CRUX queries            | `DylanJHJ/crux`            | Source: [CRUX repo](https://github.com/DylanJoo/crux)   |
+| NeuCLIR corpus (mt)     | `https://huggingface.co/datasets/neuclir/neuclir1/viewer/mt_docs`            | Source: TREC NeuCLIR 2024 |
+| NeuCLIR queries         | `https://huggingface.co/datasets/DylanJHJ/crux/tree/main/crux-neuclir/topic` | Source: [CRUX repo](https://github.com/DylanJoo/crux) |
 
 See the following scripts for details: `encode-beir.sh` and `search-beir.sh`; `encode-neuclir.sh` and `search-neuclir.sh`
 
