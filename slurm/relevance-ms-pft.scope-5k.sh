@@ -26,8 +26,7 @@ cp $0 ${model_dir}
 GPUS_PER_NODE=4
 NUM_NODES=1
 NUM_PROCESSES=$(expr $NUM_NODES \* $GPUS_PER_NODE)
-# PRETRAINED=DylanJHJ/modernbert-base.relevance-10k
-PRETRAINED=DylanJHJ/modernbert-base.relevance-25k
+PRETRAINED=DylanJHJ/modernbert-base.relevance-10k
 
 # Start experiments
 srun singularity exec $SIF \
@@ -41,7 +40,7 @@ srun singularity exec $SIF \
     --save_steps 1000 \
     --dataset_name DylanJHJ/crux-researchy-kdnew-ext \
     --corpus_name DylanJHJ/crux-researchy-corpus \
-    --request_as_query True \
+    --request_as_query \
     --dataset_split pos_half.neu_low.neg_zero \
     --per_device_train_batch_size 16 \
     --train_group_size 8 \

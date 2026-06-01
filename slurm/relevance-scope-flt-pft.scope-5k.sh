@@ -2,7 +2,7 @@
 #SBATCH --job-name=cover
 #SBATCH --output=logs/cover.out
 #SBATCH --error=logs/cover.err
-#SBATCH --partition=small-g
+#SBATCH --partition=standard-g
 #SBATCH --ntasks-per-node=1
 #SBATCH --nodes=1                   # Total number of nodes 
 #SBATCH --cpus-per-task=16
@@ -40,7 +40,6 @@ srun singularity exec $SIF \
     --save_steps 1000 \
     --dataset_name DylanJHJ/crux-researchy-kdnew-ext \
     --corpus_name DylanJHJ/crux-researchy-corpus \
-    --request_as_query True \
     --dataset_split pos_half.neu_low.neg_zero \
     --per_device_train_batch_size 16 \
     --train_group_size 8 \

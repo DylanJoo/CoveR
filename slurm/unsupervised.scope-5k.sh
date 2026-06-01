@@ -21,6 +21,7 @@ lr=1e-4
 model_dir=${HOME}/models/CoveR/unsupervised.scope-5k
 
 mkdir -p ${model_dir}
+cp $0 ${model_dir}
 
 GPUS_PER_NODE=4
 NUM_NODES=1
@@ -39,7 +40,6 @@ srun singularity exec $SIF \
     --save_steps 1000 \
     --dataset_name DylanJHJ/crux-researchy-kdnew-ext \
     --corpus_name DylanJHJ/crux-researchy-corpus \
-    --request_as_query True \
     --dataset_split pos_half.neu_low.neg_zero \
     --per_device_train_batch_size 16 \
     --train_group_size 8 \

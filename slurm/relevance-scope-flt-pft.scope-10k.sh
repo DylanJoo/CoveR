@@ -18,7 +18,7 @@ export TOKENIZERS_PARALLELISM=false
 export CRUX_ROOT=${HOME}/datasets/crux
 
 lr=5e-5
-model_dir=${HOME}/models/CoveR/relevance-scope-flt-pft.cover-10k
+model_dir=${HOME}/models/CoveR/modernbert-base.scope-flt-cover-10k
 
 mkdir -p ${model_dir}
 cp $0 ${model_dir}
@@ -40,7 +40,6 @@ srun singularity exec $SIF \
     --save_steps 1000 \
     --dataset_name DylanJHJ/crux-researchy-kdnew-ext \
     --corpus_name DylanJHJ/crux-researchy-corpus \
-    --request_as_query True \
     --dataset_split pos_half.neu_low.neg_zero \
     --per_device_train_batch_size 16 \
     --train_group_size 8 \
