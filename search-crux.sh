@@ -16,7 +16,10 @@ conda activate inference
 CRUX_ROOT=${HOME}/datasets/crux
 MODEL_DIRS=(
 DylanJHJ/modernbert-base.cover-5k
+DylanJHJ/modernbert-base.scope-flt-cover-5k
+DylanJHJ/modernbert-base.scope-flt-cover-10k
 DylanJHJ/modernbert-base.relevance-10k
+DylanJHJ/modernbert-base.scope-5k
 )
 
 for model_dir in "${MODEL_DIRS[@]}"; do

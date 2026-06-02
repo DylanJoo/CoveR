@@ -16,12 +16,11 @@ initconda
 conda activate inference 
 
 MODEL_DIRS=(
-# DylanJHJ/modernbert-base.cover-5k # R
-# DylanJHJ/modernbert-base.relevance-10k # R
-# DylanJHJ/modernbert-base.scope-5k # R
-# DylanJHJ/modernbert-base.scope-flt-cover-5k # R
-# DylanJHJ/modernbert-base.scope-10k
-DylanJHJ/modernbert-base.cover-5k.reproduced
+DylanJHJ/modernbert-base.cover-5k
+DylanJHJ/modernbert-base.scope-flt-cover-5k
+DylanJHJ/modernbert-base.scope-flt-cover-10k
+DylanJHJ/modernbert-base.relevance-10k
+DylanJHJ/modernbert-base.scope-5k
 )
 
 LANGS=(

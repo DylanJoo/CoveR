@@ -66,11 +66,15 @@
 # NeuCLIR and CRUX
 | Model | Dataset | Metric | Score |
 |---|---|---|---|
-| cover-5k           | neuclir24-test.trec | P@10 | 0.8421 | nDCG@10 | 0.8611 | alpha_nDCG@10 | 0.5755 | Cov@10 | 0.6722 | 
-| cover-5k           | crux-mds-duc04      | P@10 | 0.6860 | nDCG@10 | 0.7133 | alpha_nDCG@10 | 0.5792 | Cov@10 | 0.6308 | 
-| cover-5k           | crux-mds-multi_news | P@10 | 0.3750 | nDCG@10 | 0.5514 | alpha_nDCG@10 | 0.5774 | Cov@10 | 0.5844 | 
-| relevance-10k      | neuclir24-test.trec | P@10 | 0.6947 | nDCG@10 | 0.7230 | alpha_nDCG@10 | 0.4594 | Cov@10 | 0.5540 | 
-| relevance-10k      | crux-mds-duc04      | P@10 | 0.6280 | nDCG@10 | 0.6481 | alpha_nDCG@10 | 0.5188 | Cov@10 | 0.5843 | 
-| relevance-10k      | crux-mds-multi_news | P@10 | 0.3390 | nDCG@10 | 0.4872 | alpha_nDCG@10 | 0.4948 | Cov@10 | 0.5176 | 
-| scope-5k           | neuclir24-test.trec | P@10 | 0.8263 | nDCG@10 | 0.8369 | alpha_nDCG@10 | 0.5888 | Cov@10 | 0.6769 | 
-| scope-flt-cover-5k | neuclir24-test.trec | P@10 | 0.8263 | nDCG@10 | 0.8445 | alpha_nDCG@10 | 0.6023 | Cov@10 | 0.6729 | 
+| cover-5k            | neuclir24-test.trec | P@10 | 0.8421 | nDCG@10 | 0.8611 | alpha_nDCG@10 | 0.5755 | Cov@10 | 0.6722 | 
+| relevance-10k       | neuclir24-test.trec | P@10 | 0.6947 | nDCG@10 | 0.7230 | alpha_nDCG@10 | 0.4594 | Cov@10 | 0.5540 | 
+| scope-5k            | neuclir24-test.trec | P@10 | 0.8263 | nDCG@10 | 0.8369 | alpha_nDCG@10 | 0.5888 | Cov@10 | 0.6769 | 
+| scope-flt-cover-5k  | neuclir24-test.trec | P@10 | 0.8263 | nDCG@10 | 0.8445 | alpha_nDCG@10 | 0.6023 | Cov@10 | 0.6729 | 
+| scope-flt-cover-10k | neuclir24-test.trec | P@10 | 0.8316 | nDCG@10 | 0.8379 | alpha_nDCG@10 | 0.6044 | Cov@10 | 0.6963 | 
+
+| Model | Dataset | Metric | Score |
+|---|---|---|---|
+| cover-5k            | crux-mds-duc04      | P@10 | 0.6860 | nDCG@10 | 0.7133 | alpha_nDCG@10 | 0.5792 | Cov@10 | 0.6308 | 
+| cover-5k            | crux-mds-multi_news | P@10 | 0.3750 | nDCG@10 | 0.5514 | alpha_nDCG@10 | 0.5774 | Cov@10 | 0.5844 | 
+| relevance-10k       | crux-mds-duc04      | P@10 | 0.6280 | nDCG@10 | 0.6481 | alpha_nDCG@10 | 0.5188 | Cov@10 | 0.5843 | 
+| relevance-10k       | crux-mds-multi_news | P@10 | 0.3390 | nDCG@10 | 0.4872 | alpha_nDCG@10 | 0.4948 | Cov@10 | 0.5176 | 

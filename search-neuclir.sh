@@ -19,8 +19,8 @@ MODEL_DIRS=(
 # DylanJHJ/modernbert-base.relevance-10k
 # DylanJHJ/modernbert-base.scope-5k
 # DylanJHJ/modernbert-base.scope-flt-cover-5k
-DylanJHJ/modernbert-base.cover-5k.reproduced
-# DylanJHJ/modernbert-base.scope-10k # Rerun training
+# DylanJHJ/modernbert-base.cover-5k.reproduced
+DylanJHJ/modernbert-base.scope-flt-cover-10k # R
 )
 
 for model_dir in "${MODEL_DIRS[@]}"; do
