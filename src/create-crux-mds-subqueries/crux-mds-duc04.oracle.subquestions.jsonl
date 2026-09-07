@@ -1,0 +1,750 @@
+{"query_id": "duc04-test-0:::0", "query_text": "Who was the mainstay of Buffalo's only abortion clinic that was slain?"}
+{"query_id": "duc04-test-0:::1", "query_text": "What is the FBI looking for James Kopp for?"}
+{"query_id": "duc04-test-0:::2", "query_text": "How would you describe Dr. Slepian's personality according to the text?"}
+{"query_id": "duc04-test-0:::3", "query_text": "What is Attorney General Reno investigating?"}
+{"query_id": "duc04-test-0:::4", "query_text": "Why are authorities in Canada worried about new violence erupting as Remembrance Day approaches?"}
+{"query_id": "duc04-test-0:::5", "query_text": "What kind of groups are targeting abortion clinics?"}
+{"query_id": "duc04-test-0:::6", "query_text": "What is the range of opposition from anti-abortion groups?"}
+{"query_id": "duc04-test-0:::7", "query_text": "Who are the clinics serving according to the text?"}
+{"query_id": "duc04-test-0:::8", "query_text": "What task force has AG Janet Reno named?"}
+{"query_id": "duc04-test-0:::9", "query_text": "What was Dr. Slepian's dedication to?"}
+{"query_id": "duc04-test-0:::10", "query_text": "How many similar deaths have occurred, and how many similar attacks have there been?"}
+{"query_id": "duc04-test-0:::11", "query_text": "What activities are part of the anti-abortion movement?"}
+{"query_id": "duc04-test-0:::12", "query_text": "What has been declining since the first few years after Roe v Wade?"}
+{"query_id": "duc04-test-0:::13", "query_text": "Who is Rev. Norman Weslin, and what is his role in the anti-abortion movement?"}
+{"query_id": "duc04-test-0:::14", "query_text": "What imperils the widespread availability of abortion procedures besides anti-abortion violence?"}
+{"query_id": "duc04-test-1:::0", "query_text": "What was the main issue that led to the National Basketball Association owners declaring a lockout on July 1, 1998?"}
+{"query_id": "duc04-test-1:::1", "query_text": "What clause in the old collective bargaining agreement did the NBA owners want to discard?"}
+{"query_id": "duc04-test-1:::2", "query_text": "What proposal did the players submit to the owners on October 5, 1998?"}
+{"query_id": "duc04-test-1:::3", "query_text": "What was the outcome of the meeting between the NBA owners and players on October 13, 1998?"}
+{"query_id": "duc04-test-1:::4", "query_text": "What was the Larry Bird exception, and how was it used in the NBA?"}
+{"query_id": "duc04-test-1:::5", "query_text": "How many preseason games were cancelled due to the labor dispute?"}
+{"query_id": "duc04-test-1:::6", "query_text": "What was the main sticking point in the labor dispute between the NBA owners and players?"}
+{"query_id": "duc04-test-1:::7", "query_text": "How much money was at stake in the dispute over the distribution of league income?"}
+{"query_id": "duc04-test-1:::8", "query_text": "What was the outcome of the meeting between the NBA owners and players on October 21, 1998?"}
+{"query_id": "duc04-test-1:::9", "query_text": "What was the proposal submitted by the players to address the issue of high salaries?"}
+{"query_id": "duc04-test-1:::10", "query_text": "How many regular season games were initially cancelled due to the labor dispute?"}
+{"query_id": "duc04-test-1:::11", "query_text": "What was the name of the arbitrator who was to decide on whether players with guaranteed salary contracts should be paid during the lockout?"}
+{"query_id": "duc04-test-1:::12", "query_text": "What was the amount of money that was to be decided upon by the arbitrator?"}
+{"query_id": "duc04-test-1:::13", "query_text": "What was the potential consequence for lesser-paid players if the union did not survive the labor dispute?"}
+{"query_id": "duc04-test-1:::14", "query_text": "How did the NBA's labor dispute compare to those of other professional sports leagues?"}
+{"query_id": "duc04-test-2:::0", "query_text": "In what year did the story about the relatives of IOC members receiving scholarships from Salt Lake City for the 2002 Winter Olympic Games break?"}
+{"query_id": "duc04-test-2:::1", "query_text": "2. Who called the scholarships a \"bribe\" and what was his position in the IOC?"}
+{"query_id": "duc04-test-2:::2", "query_text": "3. What was the maximum value that cities could give to IOC members according to IOC rules?"}
+{"query_id": "duc04-test-2:::3", "query_text": "4. How many IOC members did Marc Hodler estimate received compensation for their votes?"}
+{"query_id": "duc04-test-2:::4", "query_text": "5. Who vowed to expel any guilty IOC member, and what was his position in the IOC?"}
+{"query_id": "duc04-test-2:::5", "query_text": "6. What was the allegation made by IOC executive board member Marc Hodler?"}
+{"query_id": "duc04-test-2:::6", "query_text": "7. What was the amount of the scholarship payments offered to IOC members' relatives by the Salt Lake City 2002 Games organizers?"}
+{"query_id": "duc04-test-2:::7", "query_text": "8. How many relatives of IOC members received the scholarships?"}
+{"query_id": "duc04-test-2:::8", "query_text": "9. What was the response of IOC President Samaranch to the allegations of Olympic corruption?"}
+{"query_id": "duc04-test-2:::9", "query_text": "10. Which city's mayor denied allegations of bribery to host the 1998 Winter Games?"}
+{"query_id": "duc04-test-2:::10", "query_text": "11. What was the amount of unaccounted money in the Nagano games?"}
+{"query_id": "duc04-test-2:::11", "query_text": "12. Who headed the inquiry into the allegations of bribery?"}
+{"query_id": "duc04-test-2:::12", "query_text": "13. What was the response of the Salt Lake committee to the allegations?"}
+{"query_id": "duc04-test-2:::13", "query_text": "14. In what year was Salt Lake City chosen to host the 2002 Winter Olympics?"}
+{"query_id": "duc04-test-2:::14", "query_text": "15. How much did the city's bid committee spend on scholarships to 13 people, including relatives of IOC members, from 1991 to 1995?"}
+{"query_id": "duc04-test-3:::0", "query_text": "What was the event that marked the beginning of the end of Mahathir Mohamad's 17-year rule as the Prime Minister of Malaysia?"}
+{"query_id": "duc04-test-3:::1", "query_text": "Who was Anwar Ibrahim and what was his role in the Malaysian government before his arrest?"}
+{"query_id": "duc04-test-3:::2", "query_text": "What was the reason for Anwar Ibrahim's arrest, according to Mahathir Mohamad?"}
+{"query_id": "duc04-test-3:::3", "query_text": "How did Anwar Ibrahim's supporters use the internet to respond to his arrest?"}
+{"query_id": "duc04-test-3:::4", "query_text": "What was the international community's reaction to Anwar Ibrahim's arrest and alleged abuse in custody?"}
+{"query_id": "duc04-test-3:::5", "query_text": "What was the economic situation in Malaysia during Mahathir Mohamad's 17-year rule?"}
+{"query_id": "duc04-test-3:::6", "query_text": "How did Mahathir Mohamad's government respond to the street demonstrations and protests following Anwar Ibrahim's arrest?"}
+{"query_id": "duc04-test-3:::7", "query_text": "What was the impact of Anwar Ibrahim's arrest on Malaysia's international relations and economy?"}
+{"query_id": "duc04-test-3:::8", "query_text": "Who were some of the regional leaders who considered boycotting the Malaysian meeting in response to Anwar Ibrahim's arrest?"}
+{"query_id": "duc04-test-3:::9", "query_text": "What was the condition of Anwar Ibrahim when he was released from custody?"}
+{"query_id": "duc04-test-3:::10", "query_text": "What were the charges brought against Anwar Ibrahim and his friend?"}
+{"query_id": "duc04-test-3:::11", "query_text": "How did the Malaysian trade minister respond to the international concerns about Anwar Ibrahim's arrest?"}
+{"query_id": "duc04-test-3:::12", "query_text": "What was the potential consequence of Mahathir Mohamad's decision not to select a successor before his resignation or death?"}
+{"query_id": "duc04-test-3:::13", "query_text": "What was the name of the summit that was to be held in Malaysia, which was affected by the political crisis?"}
+{"query_id": "duc04-test-3:::14", "query_text": "How did Mahathir Mohamad's reversal of his economic policy in September 1998 affect his relationship with Anwar Ibrahim?"}
+{"query_id": "duc04-test-4:::0", "query_text": "What is the main power broker in Lebanon?"}
+{"query_id": "duc04-test-4:::1", "query_text": "Who is the current president of Lebanon?"}
+{"query_id": "duc04-test-4:::2", "query_text": "Why was the constitution amended to permit senior public servants to be president?"}
+{"query_id": "duc04-test-4:::3", "query_text": "Who opposed the appointment of Emile Lahoud as president?"}
+{"query_id": "duc04-test-4:::4", "query_text": "What was the reason for the conflict between President Lahoud and Prime Minister Hariri?"}
+{"query_id": "duc04-test-4:::5", "query_text": "What was the impact of the conflict on Lebanon's economic stability?"}
+{"query_id": "duc04-test-4:::6", "query_text": "Who rebuilt the Lebanese army and ended the militia reign?"}
+{"query_id": "duc04-test-4:::7", "query_text": "What was the traditional arrangement for the leadership positions in Lebanon?"}
+{"query_id": "duc04-test-4:::8", "query_text": "Who was the architect of Lebanon's postwar reconstruction?"}
+{"query_id": "duc04-test-4:::9", "query_text": "What was the reason for Prime Minister Hariri's refusal to form a new government?"}
+{"query_id": "duc04-test-4:::10", "query_text": "Who was credited with the country's economic recovery?"}
+{"query_id": "duc04-test-4:::11", "query_text": "What was the accusation against Prime Minister Hariri's administration?"}
+{"query_id": "duc04-test-4:::12", "query_text": "How many legislators did not support Prime Minister Hariri?"}
+{"query_id": "duc04-test-4:::13", "query_text": "What was the reason for Prime Minister Hariri's withdrawal of his candidacy?"}
+{"query_id": "duc04-test-4:::14", "query_text": "When did Emile Lahoud take office as President of Lebanon?"}
+{"query_id": "duc04-test-5:::0", "query_text": "Where was PKK leader Ocalan arrested?"}
+{"query_id": "duc04-test-5:::1", "query_text": "What was Ocalan's request upon his arrest?"}
+{"query_id": "duc04-test-5:::2", "query_text": "What is Turkey's stance on Ocalan?"}
+{"query_id": "duc04-test-5:::3", "query_text": "How did Kurds in Europe react to Ocalan's arrest?"}
+{"query_id": "duc04-test-5:::4", "query_text": "What action did Italy take to stop Kurds from flocking to Rome?"}
+{"query_id": "duc04-test-5:::5", "query_text": "What was the response of Greek media and officials to Ocalan's arrest?"}
+{"query_id": "duc04-test-5:::6", "query_text": "How did Romanian Kurds show their support for Ocalan?"}
+{"query_id": "duc04-test-5:::7", "query_text": "What action did Kurdish inmates take in a Turkish prison?"}
+{"query_id": "duc04-test-5:::8", "query_text": "Why did the Turkish president require extra security for his trip to Austria?"}
+{"query_id": "duc04-test-5:::9", "query_text": "What is the significance of Ocalan's arrest for Italy's Prime Minister D'Alema?"}
+{"query_id": "duc04-test-5:::10", "query_text": "What is the estimated number of deaths resulting from the armed struggle of the PKK since its formation in 1978?"}
+{"query_id": "duc04-test-5:::11", "query_text": "Why is Italy reluctant to extradite Ocalan to Turkey?"}
+{"query_id": "duc04-test-5:::12", "query_text": "What has been the response of Greece to the situation, according to Turkey?"}
+{"query_id": "duc04-test-5:::13", "query_text": "What is the goal of the demonstrations and hunger strikes staged by Kurds and their supporters in Europe?"}
+{"query_id": "duc04-test-5:::14", "query_text": "What issue, aside from the Kurds, is a contentious one as the Turkish President visits Vienna to discuss European Union membership?"}
+{"query_id": "duc04-test-6:::0", "query_text": "What was the estimated number of people who died from famine in North Korea between 1995 and 1998?"}
+{"query_id": "duc04-test-6:::1", "query_text": "Which company's founder donated 501 cattle to North Korea in an effort to alleviate the famine?"}
+{"query_id": "duc04-test-6:::2", "query_text": "What was the estimated percentage of children under the age of 7 in North Korea who showed stunted growth in 1998?"}
+{"query_id": "duc04-test-6:::3", "query_text": "What was the main reason for China's decision to return 100 to 150 North Korean defectors?"}
+{"query_id": "duc04-test-6:::4", "query_text": "How many athletes is North Korea sending to the Asian Games in Thailand, despite the ongoing famine?"}
+{"query_id": "duc04-test-6:::5", "query_text": "What was the estimated number of tons of grain that North Korea produced in 1997?"}
+{"query_id": "duc04-test-6:::6", "query_text": "What was the name of the organization that was repelled in its attempts to provide aid to North Korea?"}
+{"query_id": "duc04-test-6:::7", "query_text": "What was the estimated percentage of the North Korean population that had access to international aid in 1998?"}
+{"query_id": "duc04-test-6:::8", "query_text": "What was the main cause of famine in Cambodia, according to the document?"}
+{"query_id": "duc04-test-6:::9", "query_text": "How many years of famine had North Korea suffered by 1998, according to the document?"}
+{"query_id": "duc04-test-6:::10", "query_text": "What was the estimated number of people who defected to South Korea in the three years leading up to 1998?"}
+{"query_id": "duc04-test-6:::11", "query_text": "What was the reason given by the North Korean government for cutting the number of people eligible for aid?"}
+{"query_id": "duc04-test-6:::12", "query_text": "What was the estimated number of tons of grain required to feed North Korea's population of 23 million people in 1997?"}
+{"query_id": "duc04-test-6:::13", "query_text": "What was the impact of the famine on the physical and mental health of North Korean children, according to the document?"}
+{"query_id": "duc04-test-6:::14", "query_text": "What was the name of the country that was said to be approaching North Korea's level of famine?"}
+{"query_id": "duc04-test-7:::0", "query_text": "What were some of the issues that delayed budget negotiations between the White House and House Republicans?"}
+{"query_id": "duc04-test-7:::1", "query_text": "What was the uncertain future of the contraceptive issue in the budget negotiations?"}
+{"query_id": "duc04-test-7:::2", "query_text": "What was the disagreement between the parties regarding education funding?"}
+{"query_id": "duc04-test-7:::3", "query_text": "What was unusual about the 1998 federal budget negotiations?"}
+{"query_id": "duc04-test-7:::4", "query_text": "What were the three main options for using the surplus in the budget negotiations?"}
+{"query_id": "duc04-test-7:::5", "query_text": "What was the significance of the Oct 1 start of the fiscal year being extended five times?"}
+{"query_id": "duc04-test-7:::6", "query_text": "What were some of the major issues in the budget negotiations?"}
+{"query_id": "duc04-test-7:::7", "query_text": "How did the committees craft the budget document?"}
+{"query_id": "duc04-test-7:::8", "query_text": "What was the total amount spent in the 1998 budget negotiations?"}
+{"query_id": "duc04-test-7:::9", "query_text": "What were some of the most difficult issues to resolve in the budget negotiations?"}
+{"query_id": "duc04-test-7:::10", "query_text": "How did conservatives feel about the results of the budget negotiations?"}
+{"query_id": "duc04-test-7:::11", "query_text": "What was included in the omnibus spending package?"}
+{"query_id": "duc04-test-7:::12", "query_text": "How would the new spending be offset in the budget?"}
+{"query_id": "duc04-test-7:::13", "query_text": "What was the challenge of reaching agreement in the budget negotiations without a common goal of reducing the deficit?"}
+{"query_id": "duc04-test-7:::14", "query_text": "What policy provisions were tied to the spending package and hotly debated?"}
+{"query_id": "duc04-test-8:::0", "query_text": "Where will President Clinton visit from December 12-15?"}
+{"query_id": "duc04-test-8:::1", "query_text": "2. What did Hamas say about Clinton's trip to the region?"}
+{"query_id": "duc04-test-8:::2", "query_text": "3. What is Netanyahu's opinion on Arafat's handling of the Wye accord?"}
+{"query_id": "duc04-test-8:::3", "query_text": "4. What are some of the concerns of the Israelis and Palestinians during this time?"}
+{"query_id": "duc04-test-8:::4", "query_text": "5. What is the extra security in place for during Clinton's visit?"}
+{"query_id": "duc04-test-8:::5", "query_text": "6. What is one of the key issues of disagreement between Israel and Palestine?"}
+{"query_id": "duc04-test-8:::6", "query_text": "7. What is the status of Israeli troop withdrawal from the West Bank?"}
+{"query_id": "duc04-test-8:::7", "query_text": "8. What are the Palestinian leaders' actions regarding the 1964 Israeli destruction clause?"}
+{"query_id": "duc04-test-8:::8", "query_text": "9. What does Israel claim is the significance of Air Force One landing in Palestinian territory?"}
+{"query_id": "duc04-test-8:::9", "query_text": "10. What are the conditions set by Israel for withdrawing West Bank troops?"}
+{"query_id": "duc04-test-8:::10", "query_text": "11. What is Palestine's claim regarding Israel's compliance with the Accord?"}
+{"query_id": "duc04-test-8:::11", "query_text": "12. How does the radical Islam group Hamas view Clinton's visit and the Accord?"}
+{"query_id": "duc04-test-8:::12", "query_text": "13. What is one of the reasons Clinton's leadership is threatened?"}
+{"query_id": "duc04-test-8:::13", "query_text": "14. What are some of the problems that immediately faced the Wye agreement?"}
+{"query_id": "duc04-test-8:::14", "query_text": "15. Why did Netanyahu finally refuse to move the peace process forward?"}
+{"query_id": "duc04-test-9:::0", "query_text": "What was the initial plan for the launch of the Zarya module?"}
+{"query_id": "duc04-test-9:::1", "query_text": "What was the job of the astronauts aboard the space shuttle Endeavour?"}
+{"query_id": "duc04-test-9:::2", "query_text": "What was the result of the astronauts' use of the shuttle's 50-foot robot arm?"}
+{"query_id": "duc04-test-9:::3", "query_text": "How many components will make up the completed International Space Station?"}
+{"query_id": "duc04-test-9:::4", "query_text": "What was the mass and length of the space station when the two modules were joined?"}
+{"query_id": "duc04-test-9:::5", "query_text": "What was the Russian Space Agency's initial request regarding the launch profile?"}
+{"query_id": "duc04-test-9:::6", "query_text": "How many launches does NASA estimate will be required to completely assemble the space station?"}
+{"query_id": "duc04-test-9:::7", "query_text": "What is the estimated number of spacewalks needed to assemble the space station?"}
+{"query_id": "duc04-test-9:::8", "query_text": "How many astronauts can the completed space station house?"}
+{"query_id": "duc04-test-9:::9", "query_text": "What is the purpose of the space station?"}
+{"query_id": "duc04-test-9:::10", "query_text": "Why did Russia and NASA decide against orbiting the space station closer to MIR?"}
+{"query_id": "duc04-test-9:::11", "query_text": "What was the result of the astronauts' spacewalk to attach electrical connectors and cables?"}
+{"query_id": "duc04-test-9:::12", "query_text": "What was the name of the U.S. module carried into space by the shuttle Endeavour?"}
+{"query_id": "duc04-test-9:::13", "query_text": "What was the name of the Russian control module cylinder?"}
+{"query_id": "duc04-test-9:::14", "query_text": "How long will the assembly of the space station take?"}
+{"query_id": "duc04-test-10:::0", "query_text": "What is the estimated number of teenagers who were injured in the dance hall fire in Goteborg, Sweden?"}
+{"query_id": "duc04-test-10:::1", "query_text": "How many nationalities were represented by the teenagers attending the Halloween dance?"}
+{"query_id": "duc04-test-10:::2", "query_text": "What was the actual capacity of the 2nd floor dance hall where the fire occurred?"}
+{"query_id": "duc04-test-10:::3", "query_text": "How long did it take for emergency help to arrive at the scene after the first call was made?"}
+{"query_id": "duc04-test-10:::4", "query_text": "What was the approximate temperature reached by the fire?"}
+{"query_id": "duc04-test-10:::5", "query_text": "What was the cause of the delay in responding to the emergency call?"}
+{"query_id": "duc04-test-10:::6", "query_text": "How many teenagers were killed in the dance hall fire, according to the reports?"}
+{"query_id": "duc04-test-10:::7", "query_text": "What was the name of the association that owned the building where the fire occurred?"}
+{"query_id": "duc04-test-10:::8", "query_text": "How many party arrangers had rented out the building for the Halloween dance?"}
+{"query_id": "duc04-test-10:::9", "query_text": "What was the age range of most of the victims of the fire?"}
+{"query_id": "duc04-test-10:::10", "query_text": "How many of the dead had been identified as of the latest report?"}
+{"query_id": "duc04-test-10:::11", "query_text": "What was the condition of the building after the fire?"}
+{"query_id": "duc04-test-10:::12", "query_text": "How many stairways were blocked by fire during the evacuation?"}
+{"query_id": "duc04-test-10:::13", "query_text": "What was the response of the Swedish authorities to the tragedy?"}
+{"query_id": "duc04-test-10:::14", "query_text": "What was the name of the holiday during which the dance hall fire occurred?"}
+{"query_id": "duc04-test-11:::0", "query_text": "What event is scheduled to take place in Malaysia from November 14-18, 1998?"}
+{"query_id": "duc04-test-11:::1", "query_text": "2. Who was fired and arrested by the Malaysian Prime Minister in September?"}
+{"query_id": "duc04-test-11:::2", "query_text": "3. What was the reaction of the presidents of Indonesia and the Philippines to the arrest of Anwar Ibrahim?"}
+{"query_id": "duc04-test-11:::3", "query_text": "4. What was the financial situation of many APEC member economies at the time?"}
+{"query_id": "duc04-test-11:::4", "query_text": "5. Who made a pep talk to investors in Thailand on the way to the APEC forum?"}
+{"query_id": "duc04-test-11:::5", "query_text": "6. Why were the presidents of the Philippines and Indonesia considering skipping the APEC meeting?"}
+{"query_id": "duc04-test-11:::6", "query_text": "7. What were some of the issues expected to be discussed at the APEC summit?"}
+{"query_id": "duc04-test-11:::7", "query_text": "8. Who was pressured by China to send a representative to the APEC summit?"}
+{"query_id": "duc04-test-11:::8", "query_text": "9. What was the advice given by world financial officials to APEC leaders?"}
+{"query_id": "duc04-test-11:::9", "query_text": "10. Who was part of the US-ASEAN delegation attending the APEC summit?"}
+{"query_id": "duc04-test-11:::10", "query_text": "11. What was unique about the luncheon planned after the APEC summit?"}
+{"query_id": "duc04-test-11:::11", "query_text": "12. How did Malaysia's economic situation change on the eve of the APEC meeting?"}
+{"query_id": "duc04-test-11:::12", "query_text": "13. Why were some world leaders having second thoughts about attending the APEC meeting?"}
+{"query_id": "duc04-test-11:::13", "query_text": "14. What were the charges brought against former Deputy Prime Minister Anwar Ibrahim?"}
+{"query_id": "duc04-test-11:::14", "query_text": "15. Which country had made some reforms that were viewed positively by the US-ASEAN delegation?"}
+{"query_id": "duc04-test-12:::0", "query_text": "What was the significance of the Wye River Accord in relation to Gaza International Airport?"}
+{"query_id": "duc04-test-12:::1", "query_text": "2. On what date did Gaza International Airport open, and what was the first flight to land?"}
+{"query_id": "duc04-test-12:::2", "query_text": "3. Who was present to greet the first Palestinian Airlines plane at the airport's opening?"}
+{"query_id": "duc04-test-12:::3", "query_text": "4. What was expected to be the impact of the airport on the Palestinian economy?"}
+{"query_id": "duc04-test-12:::4", "query_text": "5. Despite some issues, was the airport still functioning by the end of the year?"}
+{"query_id": "duc04-test-12:::5", "query_text": "6. What was the significance of the Gaza International Airport's inauguration in terms of Palestinian access?"}
+{"query_id": "duc04-test-12:::6", "query_text": "7. What was the first air route established by Palestinian flights after the airport's inauguration?"}
+{"query_id": "duc04-test-12:::7", "query_text": "8. What caused tensions between Israeli security officials and Palestinian workers at the airport?"}
+{"query_id": "duc04-test-12:::8", "query_text": "9. Who was responsible for approving flights and monitoring security at the airport?"}
+{"query_id": "duc04-test-12:::9", "query_text": "10. How did the cooperation between Israel and Palestine at the airport reflect the challenges in their peace process?"}
+{"query_id": "duc04-test-12:::10", "query_text": "11. What was the reaction of the crowd when the first Palestinian Airlines plane landed?"}
+{"query_id": "duc04-test-12:::11", "query_text": "12. What was the role of the U.S. in the Wye River accord, and what was its significance?"}
+{"query_id": "duc04-test-12:::12", "query_text": "13. What was the status of the airport's equipment on its opening day?"}
+{"query_id": "duc04-test-12:::13", "query_text": "14. What was the stipulation regarding Israel's control of airspace and passenger monitoring in the Wye River accord?"}
+{"query_id": "duc04-test-12:::14", "query_text": "15. What was the state of the Mid-East peace process by late December, and how did it affect the airport?"}
+{"query_id": "duc04-test-13:::0", "query_text": "Which country had its equestrian team's horses banned from the Asian Games?"}
+{"query_id": "duc04-test-13:::1", "query_text": "What was the reason for Saudi Arabia's withdrawal from the Asian Games?"}
+{"query_id": "duc04-test-13:::2", "query_text": "How many athletes from how many nations participated in the Asian Games?"}
+{"query_id": "duc04-test-13:::3", "query_text": "What was the duration of the Asian Games in Bangkok?"}
+{"query_id": "duc04-test-13:::4", "query_text": "What was the concern regarding the Thai police's clearing of the streets?"}
+{"query_id": "duc04-test-13:::5", "query_text": "What was the reason for China's recall of four soccer players from Europe?"}
+{"query_id": "duc04-test-13:::6", "query_text": "What was the speculation regarding Saudi Arabia's participation in the Asian Games?"}
+{"query_id": "duc04-test-13:::7", "query_text": "What was the incident that occurred during a snooker match between India and Pakistan?"}
+{"query_id": "duc04-test-13:::8", "query_text": "What was the reason for the Thai police's detention of beggars?"}
+{"query_id": "duc04-test-13:::9", "query_text": "What was the concern of some team managers regarding Bangkok's night life?"}
+{"query_id": "duc04-test-13:::10", "query_text": "What was the reason for the Iranian equestrian team's horses failing the vet's exam?"}
+{"query_id": "duc04-test-13:::11", "query_text": "Who opened the Asian Games with an elaborate ceremony?"}
+{"query_id": "duc04-test-13:::12", "query_text": "What was the number of athletes from Saudi Arabia that withdrew from the Asian Games?"}
+{"query_id": "duc04-test-13:::13", "query_text": "What was the reason for the brief soccer brawl during the Asian Games?"}
+{"query_id": "duc04-test-13:::14", "query_text": "What was the significance of the Asian Games to China, as evident from their actions?"}
+{"query_id": "duc04-test-14:::0", "query_text": "Who ordered his forces in Kosovo back to their barracks on October 4, 1998?"}
+{"query_id": "duc04-test-14:::1", "query_text": "What was the result of the Yugoslav forces' actions in Kosovo?"}
+{"query_id": "duc04-test-14:::2", "query_text": "What was NATO's response to the hostilities in Kosovo?"}
+{"query_id": "duc04-test-14:::3", "query_text": "What was the demand made by U.S. envoy Holbrooke to Milosevic?"}
+{"query_id": "duc04-test-14:::4", "query_text": "How did Milosevic respond to the NATO threat?"}
+{"query_id": "duc04-test-14:::5", "query_text": "What was Russia's stance on the hostilities in Kosovo?"}
+{"query_id": "duc04-test-14:::6", "query_text": "What was the outcome of the situation as NATO waited for a U.N. decision?"}
+{"query_id": "duc04-test-14:::7", "query_text": "What was the situation like in Kosovo two weeks after the initial threat from NATO?"}
+{"query_id": "duc04-test-14:::8", "query_text": "What was the U.S. and Russia's next step in pressuring Milosevic?"}
+{"query_id": "duc04-test-14:::9", "query_text": "What did the U.S. envoy tell Milosevic to do regarding the Albanian refugees?"}
+{"query_id": "duc04-test-14:::10", "query_text": "What was Yugoslavia's claim regarding compliance with peace demands?"}
+{"query_id": "duc04-test-14:::11", "query_text": "Did NATO believe that Yugoslavia was meeting the U.N. Security Council conditions?"}
+{"query_id": "duc04-test-14:::12", "query_text": "What was the final warning given to Milosevic by the U.S. envoy?"}
+{"query_id": "duc04-test-14:::13", "query_text": "What was Milosevic's response to the final warning?"}
+{"query_id": "duc04-test-14:::14", "query_text": "What was the result of Yugoslavia's failure to comply with the U.N. resolution?"}
+{"query_id": "duc04-test-15:::0", "query_text": "What was the profession of the people who mourned Matthew Shepherd?"}
+{"query_id": "duc04-test-15:::1", "query_text": "What was the name of the student who was severely beaten and left to die tied to a fence?"}
+{"query_id": "duc04-test-15:::2", "query_text": "How many states in the US have no hate-crime laws at all?"}
+{"query_id": "duc04-test-15:::3", "query_text": "What was the reaction of the passerby who found Matthew Shepard's body tied to a fence?"}
+{"query_id": "duc04-test-15:::4", "query_text": "What were the names of the two men who were arrested on charges of kidnapping and attempted first degree murder?"}
+{"query_id": "duc04-test-15:::5", "query_text": "What was the message that hate-crime laws were intended to send?"}
+{"query_id": "duc04-test-15:::6", "query_text": "Who was the President of the United States at the time of Matthew Shepard's death?"}
+{"query_id": "duc04-test-15:::7", "query_text": "What was the reaction of the Family Research Council on the day Matthew Shepard died?"}
+{"query_id": "duc04-test-15:::8", "query_text": "What was the name of the proposed legislation that President Clinton urged Congress to pass?"}
+{"query_id": "duc04-test-15:::9", "query_text": "What was the result of Matthew Shepard's beating?"}
+{"query_id": "duc04-test-15:::10", "query_text": "What was the reaction of gay leaders to the incident?"}
+{"query_id": "duc04-test-15:::11", "query_text": "What was the purpose of the TV ads announced by a religious right organization in Washington on the day of the beating?"}
+{"query_id": "duc04-test-15:::12", "query_text": "What was the age of the gay University of Wyoming student who was found beaten and left to die?"}
+{"query_id": "duc04-test-15:::13", "query_text": "What was the reaction of the House to the killing of Matthew Shepard?"}
+{"query_id": "duc04-test-15:::14", "query_text": "What was the name of the university that Matthew Shepard attended?"}
+{"query_id": "duc04-test-16:::0", "query_text": "Who is Mary Boyle running against in the U.S. Senate election in Ohio?"}
+{"query_id": "duc04-test-16:::1", "query_text": "What is the goal of the National Republican Congressional Committee's fundraising calls?"}
+{"query_id": "duc04-test-16:::2", "query_text": "Why are House Republicans using idle time to get votes on certain issues?"}
+{"query_id": "duc04-test-16:::3", "query_text": "What is the potential effect of President Clinton's impeachment on the Congressional elections?"}
+{"query_id": "duc04-test-16:::4", "query_text": "Why are Democrats trying to limit the impact of the Lewinsky scandal on their campaigns?"}
+{"query_id": "duc04-test-16:::5", "query_text": "Who is the target of the Republican Voinovich's campaign in Ohio?"}
+{"query_id": "duc04-test-16:::6", "query_text": "What is the Human Rights Campaign considering doing in the New York Senate race?"}
+{"query_id": "duc04-test-16:::7", "query_text": "What is the possible consequence of the Republicans gaining a 60-seat majority in the Senate?"}
+{"query_id": "duc04-test-16:::8", "query_text": "Why are Democrats worried about the Republicans gaining a majority in the Senate?"}
+{"query_id": "duc04-test-16:::9", "query_text": "What is the main reason for the uncertainty in this year's Congressional elections?"}
+{"query_id": "duc04-test-16:::10", "query_text": "Who is the Republican candidate running against Mary Boyles in Ohio?"}
+{"query_id": "duc04-test-16:::11", "query_text": "What is the potential outcome of the NY senate race between D'Amato and Schumer?"}
+{"query_id": "duc04-test-16:::12", "query_text": "Why are Democrats trying to contain the Lewinsky scandal during the elections?"}
+{"query_id": "duc04-test-16:::13", "query_text": "What is the purpose of the leadership award from Speaker Gingrich's office?"}
+{"query_id": "duc04-test-16:::14", "query_text": "Who is Sen. D'Amato running against in the New York Senate election?"}
+{"query_id": "duc04-test-17:::0", "query_text": "What was the outcome of the car bomb explosion near the Jerusalem market on Nov. 6, 1998?"}
+{"query_id": "duc04-test-17:::1", "query_text": "What was the response of the Israeli cabinet to the bombing on Nov. 6, 1998?"}
+{"query_id": "duc04-test-17:::2", "query_text": "Who initially claimed responsibility for the bombing in the Jerusalem market?"}
+{"query_id": "duc04-test-17:::3", "query_text": "What was the reason behind the Israeli cabinet's decision to postpone the vote on the Wye River peace accord?"}
+{"query_id": "duc04-test-17:::4", "query_text": "What was the age of the two Palestinian \"martyrs\" who carried out the suicide auto-bomb attack?"}
+{"query_id": "duc04-test-17:::5", "query_text": "What was the reaction of the Palestinian Authority to the bombing?"}
+{"query_id": "duc04-test-17:::6", "query_text": "What was the outcome of the bombing in terms of the number of people killed and injured?"}
+{"query_id": "duc04-test-17:::7", "query_text": "What was the demand of the Israeli government from the Palestinian Authority after the bombing?"}
+{"query_id": "duc04-test-17:::8", "query_text": "What was the response of the US to the bombing and the Israeli cabinet's decision to postpone the vote on the Wye River peace accord?"}
+{"query_id": "duc04-test-17:::9", "query_text": "What was the announcement made by PM Netanyahu after the bombing?"}
+{"query_id": "duc04-test-17:::10", "query_text": "What was the name of the settlement whose construction was resumed by Israel after the bombing?"}
+{"query_id": "duc04-test-17:::11", "query_text": "What was the claim made by one of the Islamic Jihad \"martyrs\" before the attack?"}
+{"query_id": "duc04-test-17:::12", "query_text": "What was the reason behind the bombing according to Islamic Jihad?"}
+{"query_id": "duc04-test-17:::13", "query_text": "What was the impact of the bombing on the implementation of the Wye River peace accord?"}
+{"query_id": "duc04-test-17:::14", "query_text": "What was the background of one of the Palestinian suicide bombers who carried out the attack?"}
+{"query_id": "duc04-test-18:::0", "query_text": "What was the reaction of House members when Livingston admitted to his adultery?"}
+{"query_id": "duc04-test-18:::1", "query_text": "Why did Livingston urge Clinton to resign?"}
+{"query_id": "duc04-test-18:::2", "query_text": "What was the outcome of the House vote on impeachment?"}
+{"query_id": "duc04-test-18:::3", "query_text": "What was the reaction of House Democrats when Livingston called for Clinton to quit?"}
+{"query_id": "duc04-test-18:::4", "query_text": "What was the name of the publication that disclosed information on Livingston's adultery?"}
+{"query_id": "duc04-test-18:::5", "query_text": "What was the amount of money offered by Larry Flynt for information on a House or Senate member's infidelity?"}
+{"query_id": "duc04-test-18:::6", "query_text": "What was the reaction of TV commentators to Livingston's resignation?"}
+{"query_id": "duc04-test-18:::7", "query_text": "What was the name of the Democrat who described Livingston's resignation as \"a surrender to sexual McCarthyism\"?"}
+{"query_id": "duc04-test-18:::8", "query_text": "What was the likely outcome of a Senate trial for Clinton?"}
+{"query_id": "duc04-test-18:::9", "query_text": "What was the suggested alternative to a Senate trial for Clinton?"}
+{"query_id": "duc04-test-18:::10", "query_text": "How did Livingston's admission of adultery affect the impeachment debate?"}
+{"query_id": "duc04-test-18:::11", "query_text": "What was the characterization of Livingston's pursuit of Clinton?"}
+{"query_id": "duc04-test-18:::12", "query_text": "What was the cultural impact of the impeachment debate?"}
+{"query_id": "duc04-test-18:::13", "query_text": "What was the reason for Livingston's downfall?"}
+{"query_id": "duc04-test-18:::14", "query_text": ""}
+{"query_id": "duc04-test-19:::0", "query_text": "What is the name of the module that will serve as a space tugboat in the international space station?"}
+{"query_id": "duc04-test-19:::1", "query_text": "What was the purpose of the two spacewalks conducted by Endeavor astronauts?"}
+{"query_id": "duc04-test-19:::2", "query_text": "What was Russia's request regarding the orbit of the Zarya module that was set aside?"}
+{"query_id": "duc04-test-19:::3", "query_text": "How long did the Zarya module orbit Earth before its rendezvous with the U.S. shuttle Endeavor?"}
+{"query_id": "duc04-test-19:::4", "query_text": "What was the result of the first 2 building blocks of the international space station being joined by Endeavor astronauts?"}
+{"query_id": "duc04-test-19:::5", "query_text": "Why was the launch of the first piece of the international space station delayed by a year?"}
+{"query_id": "duc04-test-19:::6", "query_text": "What was the task of the second spacewalk conducted by the astronauts?"}
+{"query_id": "duc04-test-19:::7", "query_text": "What is the function of the Unity module in the international space station?"}
+{"query_id": "duc04-test-19:::8", "query_text": "Who made the decision to veto the Russian cost-cutting proposal to orbit the station closer to Mir?"}
+{"query_id": "duc04-test-19:::9", "query_text": "What is the name of the U.S. shuttle that carried the Unity chamber into orbit?"}
+{"query_id": "duc04-test-19:::10", "query_text": "What is the purpose of the antennas that were installed on the Unity chamber?"}
+{"query_id": "duc04-test-19:::11", "query_text": "Who conducted the two spacewalks to attach antennas to Unity?"}
+{"query_id": "duc04-test-19:::12", "query_text": "What will be the function of the Russian-built Zarya module in the international space station?"}
+{"query_id": "duc04-test-19:::13", "query_text": "What was the reason for Russia's request to change the orbit of the space station?"}
+{"query_id": "duc04-test-19:::14", "query_text": "What is Russia's plan for the Mir space station?"}
+{"query_id": "duc04-test-20:::0", "query_text": "What international treaty did China plan to sign at the U.N.?"}
+{"query_id": "duc04-test-20:::1", "query_text": "What were the prison terms given to the three prominent leaders of the China Democratic Party?"}
+{"query_id": "duc04-test-20:::2", "query_text": "Which countries condemned the arrests of the China Democratic Party leaders?"}
+{"query_id": "duc04-test-20:::3", "query_text": "Why was a labor rights activist released and exiled to the U.S.?"}
+{"query_id": "duc04-test-20:::4", "query_text": "What is the goal of the U.S. policy of encouraging trade and diplomacy with China?"}
+{"query_id": "duc04-test-20:::5", "query_text": "What is the reaction of friends of jailed dissidents to the arrests and sentencing?"}
+{"query_id": "duc04-test-20:::6", "query_text": "How does China violate the new laws it has signed?"}
+{"query_id": "duc04-test-20:::7", "query_text": "What is the result of China's policy of releasing activists from prison and then exiling them?"}
+{"query_id": "duc04-test-20:::8", "query_text": "What was the response of the West to China's crackdown on political dissent in December 1998?"}
+{"query_id": "duc04-test-20:::9", "query_text": "What was the reaction of U.S. President Clinton's administration to China's sentencing of dissidents?"}
+{"query_id": "duc04-test-20:::10", "query_text": "What was the stance of China's president, Jiang Zemin, on economic reform and democracy?"}
+{"query_id": "duc04-test-20:::11", "query_text": "What were the charges brought against Xu Wenli, Wang Youchai, and Qin Yongmin?"}
+{"query_id": "duc04-test-20:::12", "query_text": "What were the prison terms given to Xu Wenli, Wang Youchai, and Qin Yongmin?"}
+{"query_id": "duc04-test-20:::13", "query_text": "What was the response of Western nations to the sentences given to the China Democracy Party leaders?"}
+{"query_id": "duc04-test-20:::14", "query_text": "What is the plan of Zha Jianguo, another Democracy Party leader, in response to the crackdown on dissent?"}
+{"query_id": "duc04-test-21:::0", "query_text": "What was the distance of the 1998 Sydney-to-Hobart yacht race in nautical miles?"}
+{"query_id": "duc04-test-21:::1", "query_text": "What were the names of the top three favored yachts at the beginning of the 1998 Sydney-to-Hobart yacht race?"}
+{"query_id": "duc04-test-21:::2", "query_text": "What was the wind forecast for the 1998 Sydney-to-Hobart yacht race?"}
+{"query_id": "duc04-test-21:::3", "query_text": "How many yachts were forced out of the race by the third day?"}
+{"query_id": "duc04-test-21:::4", "query_text": "What was the condition of the crew of the B-52 yacht?"}
+{"query_id": "duc04-test-21:::5", "query_text": "What was the name of the sailor who was swept off the yacht Sword of Orion and presumed drowned?"}
+{"query_id": "duc04-test-21:::6", "query_text": "How many sailors were killed or missing by the end of the third day of the race?"}
+{"query_id": "duc04-test-21:::7", "query_text": "What was the name of the yacht that set an early, fast lead in the 1998 Sydney-to-Hobart yacht race?"}
+{"query_id": "duc04-test-21:::8", "query_text": "What was the reason for the death of the owner of the Business Post Naiad yacht?"}
+{"query_id": "duc04-test-21:::9", "query_text": "How many yachts were still in the race by the end of the third day?"}
+{"query_id": "duc04-test-21:::10", "query_text": "What was the name of the American maxi yacht that narrowly led the race?"}
+{"query_id": "duc04-test-21:::11", "query_text": "How many deaths had occurred in the 54-year history of the Sydney-to-Hobart race before the 1998 event?"}
+{"query_id": "duc04-test-21:::12", "query_text": "How many crewmen were injured in the 1998 Sydney-to-Hobart yacht race?"}
+{"query_id": "duc04-test-21:::13", "query_text": "What was the condition of the seas during the 1998 Sydney-to-Hobart yacht race?"}
+{"query_id": "duc04-test-21:::14", "query_text": "Why did the race organizers not consider canceling the 1998 Sydney-to-Hobart yacht race?"}
+{"query_id": "duc04-test-22:::0", "query_text": "What is the UN war crimes tribunal demanding from Yugoslavia?"}
+{"query_id": "duc04-test-22:::1", "query_text": "Why did the tribunal blast Belgrade?"}
+{"query_id": "duc04-test-22:::2", "query_text": "What was the outcome of the trial of the Muslim commander?"}
+{"query_id": "duc04-test-22:::3", "query_text": "What was the reaction of the people in Sarajevo to the Muslim commander's return?"}
+{"query_id": "duc04-test-22:::4", "query_text": "What did survivors say about the actions of Serb forces in Kosovo?"}
+{"query_id": "duc04-test-22:::5", "query_text": "What is Jelisic, also known as \"Serb Adolf,\" accused of?"}
+{"query_id": "duc04-test-22:::6", "query_text": "How many killings did Jelisic confess to?"}
+{"query_id": "duc04-test-22:::7", "query_text": "Who arrested a Serb general accused of genocide?"}
+{"query_id": "duc04-test-22:::8", "query_text": "In what cases has Yugoslavia cooperated with the UN War crimes tribunal?"}
+{"query_id": "duc04-test-22:::9", "query_text": "Why did Serbs take revenge on civilians in Kosovo?"}
+{"query_id": "duc04-test-22:::10", "query_text": "What was the outcome of the trial of the Bosnian Serb, \"Serb Adolf\"?"}
+{"query_id": "duc04-test-22:::11", "query_text": "What did Allied forces do to a Bosnian Serb general charged with genocide?"}
+{"query_id": "duc04-test-22:::12", "query_text": "What did the war crimes tribunal acquit a Muslim military commander of?"}
+{"query_id": "duc04-test-22:::13", "query_text": "What was the reaction of the people to the acquittal of the Muslim commander?"}
+{"query_id": "duc04-test-22:::14", "query_text": "What is Maj. Gen. Krstic accused of?"}
+{"query_id": "duc04-test-23:::0", "query_text": "What was the main concern of Latin leaders at the Ibero-American summit?"}
+{"query_id": "duc04-test-23:::1", "query_text": "What is the estimated amount of the rescue package being negotiated between Brazil and the IMF?"}
+{"query_id": "duc04-test-23:::2", "query_text": "What are the likely austerity measures to be announced by Brazil President Cardoso?"}
+{"query_id": "duc04-test-23:::3", "query_text": "How might the outcome of the Brazilian elections affect the success of Cardoso's economic efforts?"}
+{"query_id": "duc04-test-23:::4", "query_text": "What is the role of the U.S. in the Brazil-IMF rescue deal?"}
+{"query_id": "duc04-test-23:::5", "query_text": "What is the current state of the global economy, according to the Latin American leaders at the Ibero-American summit?"}
+{"query_id": "duc04-test-23:::6", "query_text": "How has the crisis in Latin America affected the U.S. economy?"}
+{"query_id": "duc04-test-23:::7", "query_text": "What triggered Brazil's economic crisis?"}
+{"query_id": "duc04-test-23:::8", "query_text": "What is the amount of the trade deficit reported by the U.S. Commerce Department?"}
+{"query_id": "duc04-test-23:::9", "query_text": "What is the significance of the Ibero-American summit in the context of the global economic downturn?"}
+{"query_id": "duc04-test-23:::10", "query_text": "How is the U.S. involved in the efforts to stem the financial crisis in Brazil?"}
+{"query_id": "duc04-test-23:::11", "query_text": "What is the predicted outcome of the global economic downturn, according to the Latin American leaders?"}
+{"query_id": "duc04-test-23:::12", "query_text": "What is the current state of Brazil's economy, and what are the implications for the region?"}
+{"query_id": "duc04-test-23:::13", "query_text": "What measures has Brazil taken to cut its deficit?"}
+{"query_id": "duc04-test-23:::14", "query_text": "What is the potential impact of the global economic downturn on the U.S. economy?"}
+{"query_id": "duc04-test-24:::0", "query_text": "Who was one of the candidates for the 1998 Nobel Literature Prize?"}
+{"query_id": "duc04-test-24:::1", "query_text": "2. What was Jose Saramago's response to hearing that he might win the Nobel Literature Prize again in 1998?"}
+{"query_id": "duc04-test-24:::2", "query_text": "3. Who were the winners of the 1998 Nobel Medicine Prize?"}
+{"query_id": "duc04-test-24:::3", "query_text": "4. What was the reaction of Portugal to Jose Saramago winning the Nobel Literature Prize in 1998?"}
+{"query_id": "duc04-test-24:::4", "query_text": "5. What was the reaction of the Vatican to Jose Saramago winning the Nobel Literature Prize in 1998?"}
+{"query_id": "duc04-test-24:::5", "query_text": "6. What was the reason Jimmy Carter did not win the 1978 Nobel Peace Prize?"}
+{"query_id": "duc04-test-24:::6", "query_text": "7. Who would have shared the 1978 Nobel Peace Prize with Jimmy Carter if he had won?"}
+{"query_id": "duc04-test-24:::7", "query_text": "8. What was the discovery made by Robert Furchgott, Louis Ignarro, and Ferid Murad that won them the 1998 Nobel Medicine Prize?"}
+{"query_id": "duc04-test-24:::8", "query_text": "9. What was the significance of the discovery made by Robert Furchgott, Louis Ignarro, and Ferid Murad?"}
+{"query_id": "duc04-test-24:::9", "query_text": "10. Who was the first Portuguese language writer to win the Nobel Literature Prize?"}
+{"query_id": "duc04-test-24:::10", "query_text": "11. What is the date on which the Nobel Prizes are awarded?"}
+{"query_id": "duc04-test-24:::11", "query_text": "12. Where are the Nobel Prizes awarded, except for the Peace Prize?"}
+{"query_id": "duc04-test-24:::12", "query_text": "13. What is the nature of Nobel nominations?"}
+{"query_id": "duc04-test-24:::13", "query_text": "14. What was Jose Saramago widely acclaimed for?"}
+{"query_id": "duc04-test-24:::14", "query_text": "15. Who revealed that the committee wanted Jimmy Carter to share the 1978 peace prize?"}
+{"query_id": "duc04-test-25:::0", "query_text": "What was the situation in Congo in October 1998?"}
+{"query_id": "duc04-test-25:::1", "query_text": "Who was backing the rebels in their fight against President Kabila's government?"}
+{"query_id": "duc04-test-25:::2", "query_text": "What was the outcome of the rebels' initial advance to the outskirts of Kinshasa?"}
+{"query_id": "duc04-test-25:::3", "query_text": "What was the result of the rebels' counter-offensive in mid-October?"}
+{"query_id": "duc04-test-25:::4", "query_text": "What happened to the ADF rebels when they attacked Chiondo, Uganda?"}
+{"query_id": "duc04-test-25:::5", "query_text": "What was the purpose of the anti-Kabila rebels' web-site?"}
+{"query_id": "duc04-test-25:::6", "query_text": "What was the outcome of the battle in Kindu and the adjacent government airbase?"}
+{"query_id": "duc04-test-25:::7", "query_text": "How many people were killed when rebels shot down a jet near Kindu?"}
+{"query_id": "duc04-test-25:::8", "query_text": "What was the rebels' claim about the people on board the jet they shot down?"}
+{"query_id": "duc04-test-25:::9", "query_text": "What was the government's claim about the people on board the jet?"}
+{"query_id": "duc04-test-25:::10", "query_text": "What was the rebels' mission statement as posted on their web-site?"}
+{"query_id": "duc04-test-25:::11", "query_text": "What was the result of the fighting in Kindu?"}
+{"query_id": "duc04-test-25:::12", "query_text": "What percentage of Congo was under rebel control?"}
+{"query_id": "duc04-test-25:::13", "query_text": "Who was accused of backing the rebels?"}
+{"query_id": "duc04-test-25:::14", "query_text": "What were the rebels' promises to the Congolese people?"}
+{"query_id": "duc04-test-26:::0", "query_text": "What was the primary purpose of the Truth and Reconciliation Commission in South Africa?"}
+{"query_id": "duc04-test-26:::1", "query_text": "Who headed the Truth and Reconciliation Commission in South Africa?"}
+{"query_id": "duc04-test-26:::2", "query_text": "What was the outcome for those who confessed to atrocities during the apartheid era?"}
+{"query_id": "duc04-test-26:::3", "query_text": "What was the proposed consequence for those who refused to confess to atrocities?"}
+{"query_id": "duc04-test-26:::4", "query_text": "Which former South African government official threatened to sue if mentioned in connection with atrocities?"}
+{"query_id": "duc04-test-26:::5", "query_text": "What was the name of Nelson Mandela's ex-wife who could be prosecuted for her role in human rights violations?"}
+{"query_id": "duc04-test-26:::6", "query_text": "What was the name of the report released by the Truth and Reconciliation Commission?"}
+{"query_id": "duc04-test-26:::7", "query_text": "How many pages long was the report on apartheid-era atrocities released by the Truth and Reconciliation Commission?"}
+{"query_id": "duc04-test-26:::8", "query_text": "On what date was the report on apartheid-era atrocities released by the Truth and Reconciliation Commission?"}
+{"query_id": "duc04-test-26:::9", "query_text": "What was the reaction of many people to the report and the offer of amnesty?"}
+{"query_id": "duc04-test-26:::10", "query_text": "Who were the main perpetrators of human rights violations according to the Commission's report?"}
+{"query_id": "duc04-test-26:::11", "query_text": "Which organizations, apart from the former South African government, were also found to have committed atrocities?"}
+{"query_id": "duc04-test-26:::12", "query_text": "How long were prosecutions expected to take after the release of the report?"}
+{"query_id": "duc04-test-26:::13", "query_text": "What was the potential impact of the prosecutions on the country's recovery and elections?"}
+{"query_id": "duc04-test-26:::14", "query_text": "What was the intention of the report, apart from laying blame and offering amnesty?"}
+{"query_id": "duc04-test-27:::0", "query_text": "Which countries adopted a common European currency, the euro, on Dec. 31, 1998?"}
+{"query_id": "duc04-test-27:::1", "query_text": "2. How did Denmark react to the introduction of the euro in November and December 1998?"}
+{"query_id": "duc04-test-27:::2", "query_text": "3. What was the reaction of the ten countries that cut interest rates, and what fear did it raise?"}
+{"query_id": "duc04-test-27:::3", "query_text": "4. What was the outcome of the introduction of the euro in faraway China?"}
+{"query_id": "duc04-test-27:::4", "query_text": "5. What was the significance of Dec. 31, 1998, in the context of the euro?"}
+{"query_id": "duc04-test-27:::5", "query_text": "6. How did some people view the euro, and what did it represent to them?"}
+{"query_id": "duc04-test-27:::6", "query_text": "7. Which European nations were not part of the \"Euro zone\"?"}
+{"query_id": "duc04-test-27:::7", "query_text": "8. When did the euro become official for intergovernmental transfers?"}
+{"query_id": "duc04-test-27:::8", "query_text": "9. What was the effect of the euro on inflation rates in the participating countries?"}
+{"query_id": "duc04-test-27:::9", "query_text": "10. What was the president of the European Central Bank's warning about the economy?"}
+{"query_id": "duc04-test-27:::10", "query_text": "11. How did the EU monetary action contribute to the emergence of a new European identity?"}
+{"query_id": "duc04-test-27:::11", "query_text": "12. What was the significance of France's offer to host a financial meeting for nine other European nations?"}
+{"query_id": "duc04-test-27:::12", "query_text": "13. What were the potential consequences of the euro for smaller nations?"}
+{"query_id": "duc04-test-27:::13", "query_text": "14. What was the reaction of the head of the European Central Bank to the prospect of stepping down?"}
+{"query_id": "duc04-test-27:::14", "query_text": "15. What was the significance of the euro's entry into the world financial market on Jan. 1, 1999?"}
+{"query_id": "duc04-test-28:::0", "query_text": "What was the outcome of Kofi Annan's meeting with Gadhafi in Libya?"}
+{"query_id": "duc04-test-28:::1", "query_text": "2. Where does Libya agree to hold the trial of the 1988 Pan Am bombing suspects?"}
+{"query_id": "duc04-test-28:::2", "query_text": "3. What is the West's demand regarding the sentence of the 1988 Pan Am bombing suspects?"}
+{"query_id": "duc04-test-28:::3", "query_text": "4. Why did Gadhafi travel by car to visit Tunisia?"}
+{"query_id": "duc04-test-28:::4", "query_text": "5. Who reaffirmed their support for Libya during this time?"}
+{"query_id": "duc04-test-28:::5", "query_text": "6. What did Louis Farrakhan do during his visit to Libya?"}
+{"query_id": "duc04-test-28:::6", "query_text": "7. What ceremonies were held on the 10th anniversary of the 1988 Pan Am bombing?"}
+{"query_id": "duc04-test-28:::7", "query_text": "8. What is the main reason for UN sanctions against Libya?"}
+{"query_id": "duc04-test-28:::8", "query_text": "9. What is the Libyan government's condition for agreeing to the trial of the 1988 Pan Am bombing suspects?"}
+{"query_id": "duc04-test-28:::9", "query_text": "10. What is the U.S. and Britain's stance on the trial and imprisonment of the 1988 Pan Am bombing suspects?"}
+{"query_id": "duc04-test-28:::10", "query_text": "11. Who supports Libya's position regarding the trial and imprisonment of the 1988 Pan Am bombing suspects?"}
+{"query_id": "duc04-test-28:::11", "query_text": "12. What is the significance of the Lockerbie, Scotland, memorial service?"}
+{"query_id": "duc04-test-28:::12", "query_text": "13. What is the main goal of the UN, U.S., and Britain regarding the 1988 Pan Am bombing suspects?"}
+{"query_id": "duc04-test-28:::13", "query_text": "14. What is the impact of the UN flight ban on Libya?"}
+{"query_id": "duc04-test-28:::14", "query_text": "15. Who has been pressing Libya to turn over the 1988 Pan Am bombing suspects?"}
+{"query_id": "duc04-test-29:::0", "query_text": "What was the category of Hurricane Mitch when it approached Honduras on October 27, 1998?"}
+{"query_id": "duc04-test-29:::1", "query_text": "On which date did Hurricane Mitch hit the Honduran coast?"}
+{"query_id": "duc04-test-29:::2", "query_text": "What was the approximate wind speed of Hurricane Mitch when it hit the Honduran coast?"}
+{"query_id": "duc04-test-29:::3", "query_text": "What was the death toll in Nicaragua due to the collapse of a drenched volcano crater?"}
+{"query_id": "duc04-test-29:::4", "query_text": "What was the approximate number of people left homeless due to Hurricane Mitch?"}
+{"query_id": "duc04-test-29:::5", "query_text": "Which organizations sent financial aid, relief workers, and supplies to the affected areas?"}
+{"query_id": "duc04-test-29:::6", "query_text": "What was the final death toll due to Hurricane Mitch in Honduras?"}
+{"query_id": "duc04-test-29:::7", "query_text": "How many days did Hurricane Mitch batter the Honduran coast?"}
+{"query_id": "duc04-test-29:::8", "query_text": "What was the amount of aid approved by the European Union for the victims of Hurricane Mitch?"}
+{"query_id": "duc04-test-29:::9", "query_text": "Who appealed to \"all public and private institutions\" to help the victims of Hurricane Mitch?"}
+{"query_id": "duc04-test-29:::10", "query_text": "What was the amount of aid boosted by the US for the victims of Hurricane Mitch?"}
+{"query_id": "duc04-test-29:::11", "query_text": "What were some of the challenges faced by aid workers in reaching survivors?"}
+{"query_id": "duc04-test-29:::12", "query_text": "What was the estimated number of people killed in El Salvador due to Hurricane Mitch?"}
+{"query_id": "duc04-test-29:::13", "query_text": "Who was sent by President Clinton to deliver supplies to the affected area?"}
+{"query_id": "duc04-test-29:::14", "query_text": "What was the approximate number of people killed in Costa Rica due to Hurricane Mitch?"}
+{"query_id": "duc04-test-30:::0", "query_text": "What was the political situation in Cambodia in October 1998?"}
+{"query_id": "duc04-test-30:::1", "query_text": "Where did Prime Minister Hun Sen want to hold talks with the opposition leaders?"}
+{"query_id": "duc04-test-30:::2", "query_text": "What was the concern of opposition leaders Ranariddh and Sam Rainsy about holding talks in Cambodia?"}
+{"query_id": "duc04-test-30:::3", "query_text": "What was the role of King Sihanouk in the political crisis?"}
+{"query_id": "duc04-test-30:::4", "query_text": "What was the outcome of the negotiations between Hun Sen and the opposition leaders?"}
+{"query_id": "duc04-test-30:::5", "query_text": "Who was left out of the coalition government formed in November?"}
+{"query_id": "duc04-test-30:::6", "query_text": "What assurance was Sam Rainsy seeking from the King?"}
+{"query_id": "duc04-test-30:::7", "query_text": "What was the reaction of the US House to Hun Sen's regime?"}
+{"query_id": "duc04-test-30:::8", "query_text": "What was the impact of the Asian Development Bank's decision on Hun Sen's government?"}
+{"query_id": "duc04-test-30:::9", "query_text": "What was the response of the CCP to the US Senate?"}
+{"query_id": "duc04-test-30:::10", "query_text": "What was the outcome of the summit convened by King Sihanouk?"}
+{"query_id": "duc04-test-30:::11", "query_text": "What were the accusations made by Hun Sen against Sam Rainsy?"}
+{"query_id": "duc04-test-30:::12", "query_text": "What were the findings of the UN regarding human rights violations in Cambodia?"}
+{"query_id": "duc04-test-30:::13", "query_text": "What was the guarantee made by Hun Sen to his opponents?"}
+{"query_id": "duc04-test-30:::14", "query_text": "What was the reaction of Sam Rainsy to the agreement between Hun Sen and Ranariddh?"}
+{"query_id": "duc04-test-31:::0", "query_text": "What was the reason for Turkish Prime Minister Yilmaz's ousting from office?"}
+{"query_id": "duc04-test-31:::1", "query_text": "Who was asked to form a new government after Yilmaz's ousting?"}
+{"query_id": "duc04-test-31:::2", "query_text": "Why was Ecevit unable to win the support of Ciller for a secular coalition?"}
+{"query_id": "duc04-test-31:::3", "query_text": "What was the expectation from President Demirel after Ecevit's failure to form a government?"}
+{"query_id": "duc04-test-31:::4", "query_text": "Who was the new premier-designate and what was his goal in forming a government?"}
+{"query_id": "duc04-test-31:::5", "query_text": "What were the charges that led to Prime Minister Mesut Yilmaz's resignation?"}
+{"query_id": "duc04-test-31:::6", "query_text": "Who was asked by President Demirel to form a new government after Yilmaz's resignation?"}
+{"query_id": "duc04-test-31:::7", "query_text": "What was the issue that prevented Ecevit from securing the support of the Center-Right Party?"}
+{"query_id": "duc04-test-31:::8", "query_text": "Who was named as the new prime minister designate by President Demirel after Ecevit's failure?"}
+{"query_id": "duc04-test-31:::9", "query_text": "What was the longstanding issue in the Turkish parliament that affected the formation of a new government?"}
+{"query_id": "duc04-test-31:::10", "query_text": "Why did Ecevit distrust Yilmaz and Ciller, and how did he try to address this issue?"}
+{"query_id": "duc04-test-31:::11", "query_text": "What was the condition set by Ciller for joining the government, and why did the secular parties resist it?"}
+{"query_id": "duc04-test-31:::12", "query_text": "How long did Ecevit try to form a coalition government, and what was the outcome?"}
+{"query_id": "duc04-test-31:::13", "query_text": "What was the task assigned to Yalim Erez, and what were the expectations from him?"}
+{"query_id": "duc04-test-31:::14", "query_text": "What was the possible consequence for Erez if he did not stick to secular principles in forming the government?"}
+{"query_id": "duc04-test-32:::0", "query_text": "What is the main issue at the heart of the government's case against Microsoft?"}
+{"query_id": "duc04-test-32:::1", "query_text": "What law is being invoked in the government's anti-trust suit against Microsoft?"}
+{"query_id": "duc04-test-32:::2", "query_text": "What is the Sherman Antitrust Act of 1890 primarily intended to do?"}
+{"query_id": "duc04-test-32:::3", "query_text": "What is the central argument made by Microsoft regarding its Internet Explorer?"}
+{"query_id": "duc04-test-32:::4", "query_text": "What is the name of the chairman of Microsoft who is portrayed in a negative light in the trial?"}
+{"query_id": "duc04-test-32:::5", "query_text": "What is the result of Microsoft's contracts with computer manufacturers regarding Netscape's Navigator browser?"}
+{"query_id": "duc04-test-32:::6", "query_text": "What is the main goal of the government and 20 states in filing the anti-trust suit against Microsoft?"}
+{"query_id": "duc04-test-32:::7", "query_text": "How does the Justice Department describe Microsoft's conduct in the trial?"}
+{"query_id": "duc04-test-32:::8", "query_text": "What is the name of the book that may be crucial to the trial?"}
+{"query_id": "duc04-test-32:::9", "query_text": "What is the significance of the 1890 Sherman Anti-Trust Act in the context of the trial?"}
+{"query_id": "duc04-test-32:::10", "query_text": "How does Microsoft justify its contracts with computer manufacturers?"}
+{"query_id": "duc04-test-32:::11", "query_text": "What is the complaint made by Netscape that is central to the case?"}
+{"query_id": "duc04-test-32:::12", "query_text": "What is the result of Microsoft's pattern of anti-competitive conduct, according to the Justice Department?"}
+{"query_id": "duc04-test-32:::13", "query_text": "What is the main benefit that Microsoft claims its Windows and browser offer to consumers?"}
+{"query_id": "duc04-test-32:::14", "query_text": "What is the outcome of the government's request to examine Microsoft's financial records?"}
+{"query_id": "duc04-test-33:::0", "query_text": "Who was appointed as the Foreign Minister of Israel by Prime Minister Natanyahu in 1998?"}
+{"query_id": "duc04-test-33:::1", "query_text": "What did Ariel Sharon announce he would do if appointed as Foreign Minister?"}
+{"query_id": "duc04-test-33:::2", "query_text": "What was the reaction of Arab commentary to Ariel Sharon's appointment as Foreign Minister?"}
+{"query_id": "duc04-test-33:::3", "query_text": "What was the expected outcome of the peace talks in the U.S. after Sharon's appointment?"}
+{"query_id": "duc04-test-33:::4", "query_text": "What was the reason behind Sharon's appointment according to some analysts?"}
+{"query_id": "duc04-test-33:::5", "query_text": "What was Ariel Sharon's reputation in partisan politics?"}
+{"query_id": "duc04-test-33:::6", "query_text": "What was Ariel Sharon responsible for during the Lebanon incursion?"}
+{"query_id": "duc04-test-33:::7", "query_text": "What was the reaction of Arabs to Sharon's appointment as Foreign Minister?"}
+{"query_id": "duc04-test-33:::8", "query_text": "What was the goal of the peace summit in the U.S. scheduled just weeks after Sharon's appointment?"}
+{"query_id": "duc04-test-33:::9", "query_text": "What was the reaction of the Lebanese press to Sharon's appointment as lead negotiator?"}
+{"query_id": "duc04-test-33:::10", "query_text": "What was Ariel Sharon's military background?"}
+{"query_id": "duc04-test-33:::11", "query_text": "Who was responsible for the massacre of Palestinian civilians at refugee camps in Lebanon in 1982?"}
+{"query_id": "duc04-test-33:::12", "query_text": "What was the reason behind Netanyahu's decision to appoint Sharon as Foreign Minister according to some analysts?"}
+{"query_id": "duc04-test-33:::13", "query_text": "What was Ariel Sharon's stance on shaking hands with Palestinian leader Yasser Arafat?"}
+{"query_id": "duc04-test-33:::14", "query_text": "What was the reaction of a Syrian paper to Sharon's appointment as lead negotiator?"}
+{"query_id": "duc04-test-34:::0", "query_text": "What year did the U.S. government press its antitrust case against Microsoft Corp.?"}
+{"query_id": "duc04-test-34:::1", "query_text": "Who proposed an alliance with Netscape Communications and Sun Microsystems in November 1998?"}
+{"query_id": "duc04-test-34:::2", "query_text": "What was the purpose of the proposed three-pronged deal between AOL, Netscape Communications, and Sun Microsystems?"}
+{"query_id": "duc04-test-34:::3", "query_text": "What was AOL planning to do to Netscape as part of the deal?"}
+{"query_id": "duc04-test-34:::4", "query_text": "Why did Microsoft lawyers argue that AOL's purchase of Netscape would undermine the government's antitrust case?"}
+{"query_id": "duc04-test-34:::5", "query_text": "What was at the heart of the antitrust suit against Microsoft?"}
+{"query_id": "duc04-test-34:::6", "query_text": "What was Netscape alleging that Microsoft had done to deny market opportunities?"}
+{"query_id": "duc04-test-34:::7", "query_text": "What was the goal of AOL's negotiations to purchase Netscape?"}
+{"query_id": "duc04-test-34:::8", "query_text": "What was AOL counting on the Netscape purchase to allow it to do?"}
+{"query_id": "duc04-test-34:::9", "query_text": "What was America Online known for in cyberspace?"}
+{"query_id": "duc04-test-34:::10", "query_text": "Why did AOL seek to buy Netscape and work an alliance with Sun Microsystems?"}
+{"query_id": "duc04-test-34:::11", "query_text": "What was a major factor that contributed to Netscape's struggles?"}
+{"query_id": "duc04-test-34:::12", "query_text": "How did Microsoft respond to the antitrust charges against it?"}
+{"query_id": "duc04-test-34:::13", "query_text": "What was the potential outcome of the AOL-Netscape deal for the market?"}
+{"query_id": "duc04-test-34:::14", "query_text": "What impact did the news of the deal have on the Dow Jones?"}
+{"query_id": "duc04-test-35:::0", "query_text": "Who was Galina Starovoitova and what were her roles in Russian politics?"}
+{"query_id": "duc04-test-35:::1", "query_text": "In what city was Galina Starovoitova gunned down?"}
+{"query_id": "duc04-test-35:::2", "query_text": "Who was seriously wounded alongside Galina Starovoitova?"}
+{"query_id": "duc04-test-35:::3", "query_text": "What was Galina Starovoitova planning to do in the year 2000?"}
+{"query_id": "duc04-test-35:::4", "query_text": "How did Galina Starovoitova's death compare to other female politician deaths in Russia's history?"}
+{"query_id": "duc04-test-35:::5", "query_text": "Who would be leading the investigation into Galina Starovoitova's death?"}
+{"query_id": "duc04-test-35:::6", "query_text": "What was the nature of Galina Starovoitova's dedication to democracy?"}
+{"query_id": "duc04-test-35:::7", "query_text": "What was the outcome of the police investigation after Galina Starovoitova's aide regained consciousness?"}
+{"query_id": "duc04-test-35:::8", "query_text": "How did the public react to Galina Starovoitova's death?"}
+{"query_id": "duc04-test-35:::9", "query_text": "Where was Galina Starovoitova to be buried?"}
+{"query_id": "duc04-test-35:::10", "query_text": "What was the nature of Galina Starovoitova's attempted presidential run in 1996?"}
+{"query_id": "duc04-test-35:::11", "query_text": "What type of killing did Galina Starovoitova's death appear to be?"}
+{"query_id": "duc04-test-35:::12", "query_text": "What was the response of Yeltsin to Galina Starovoitova's death?"}
+{"query_id": "duc04-test-35:::13", "query_text": "How common are contract killings in Russia, and how often are they prosecuted?"}
+{"query_id": "duc04-test-35:::14", "query_text": "What was the reaction of the international community to Galina Starovoitova's death?"}
+{"query_id": "duc04-test-36:::0", "query_text": "What health issues has President Boris Yeltsin faced during his presidency?"}
+{"query_id": "duc04-test-36:::1", "query_text": "How has President Yeltsin's health affected his ability to perform his duties as president?"}
+{"query_id": "duc04-test-36:::2", "query_text": "What was the outcome of the constitutional court's hearings on President Yeltsin's eligibility for a third term?"}
+{"query_id": "duc04-test-36:::3", "query_text": "Why did President Yeltsin cut short his trip to Central Asia?"}
+{"query_id": "duc04-test-36:::4", "query_text": "What was the cause of the burns on President Yeltsin's hands?"}
+{"query_id": "duc04-test-36:::5", "query_text": "How has President Yeltsin's health impacted his relationship with other Russian leaders?"}
+{"query_id": "duc04-test-36:::6", "query_text": "What is the current state of President Yeltsin's health, according to doctors?"}
+{"query_id": "duc04-test-36:::7", "query_text": "How has President Yeltsin's health affected his travel schedule?"}
+{"query_id": "duc04-test-36:::8", "query_text": "What was the reaction of President Yeltsin's family to concerns about his health?"}
+{"query_id": "duc04-test-36:::9", "query_text": "What is the general sentiment among Russians regarding President Yeltsin's ability to govern?"}
+{"query_id": "duc04-test-36:::10", "query_text": "How has President Yeltsin's health impacted Russia's economic crisis?"}
+{"query_id": "duc04-test-36:::11", "query_text": "What was the result of President Yeltsin's trip to Uzbekistan?"}
+{"query_id": "duc04-test-36:::12", "query_text": "What was the reason for President Yeltsin's cancellation of his trip to Austria?"}
+{"query_id": "duc04-test-36:::13", "query_text": "Who replaced President Yeltsin at the Asian summit?"}
+{"query_id": "duc04-test-36:::14", "query_text": "What is President Yeltsin's stance on seeking reelection for a third term?"}
+{"query_id": "duc04-test-37:::0", "query_text": "Which country invaded and annexed East Timor in 1975 and 1976, respectively?"}
+{"query_id": "duc04-test-37:::1", "query_text": "What was the result of Portugal's action in 1998 regarding talks with Indonesia?"}
+{"query_id": "duc04-test-37:::2", "query_text": "What was the reaction of Taiwan to the East Timor issue in 1998?"}
+{"query_id": "duc04-test-37:::3", "query_text": "How did Australians react to the training of Indonesian military personnel?"}
+{"query_id": "duc04-test-37:::4", "query_text": "What was the stance of the European Union on the East Timor issue in 1998?"}
+{"query_id": "duc04-test-37:::5", "query_text": "Who is the spiritual leader of East Timor and what award did he receive in 1996?"}
+{"query_id": "duc04-test-37:::6", "query_text": "What accusation has Portugal made against Indonesia regarding East Timor?"}
+{"query_id": "duc04-test-37:::7", "query_text": "What is the status of Indonesia's claim to East Timor according to the UN?"}
+{"query_id": "duc04-test-37:::8", "query_text": "What has been the outcome of the talks between Indonesia and Portugal on the East Timor issue?"}
+{"query_id": "duc04-test-37:::9", "query_text": "What is the UN's plan for resolving the East Timor issue?"}
+{"query_id": "duc04-test-37:::10", "query_text": "What is the stance of Australia and Taiwan on the East Timor issue?"}
+{"query_id": "duc04-test-37:::11", "query_text": "What incidents have occurred in Jakarta and west Timor in relation to the East Timor issue?"}
+{"query_id": "duc04-test-37:::12", "query_text": "What is the current status of the talks between Indonesia and Portugal on the East Timor issue?"}
+{"query_id": "duc04-test-37:::13", "query_text": "What is the stance of the European Union on the presence of UN troops in East Timor?"}
+{"query_id": "duc04-test-37:::14", "query_text": "What is the proposed solution for the future of East Timor?"}
+{"query_id": "duc04-test-38:::0", "query_text": "What was the reason behind Turkey's accusation against Syria in October 1998?"}
+{"query_id": "duc04-test-38:::1", "query_text": "Which countries supported Syria in the dispute with Turkey?"}
+{"query_id": "duc04-test-38:::2", "query_text": "What was the role of Egypt's President Mubarak in the crisis between Syria and Turkey?"}
+{"query_id": "duc04-test-38:::3", "query_text": "Why did tensions rise between Syria and Turkey?"}
+{"query_id": "duc04-test-38:::4", "query_text": "How many troops did Turkey send to its border with Syria?"}
+{"query_id": "duc04-test-38:::5", "query_text": "What was the response of Israel to the crisis between Syria and Turkey?"}
+{"query_id": "duc04-test-38:::6", "query_text": "Who offered to mediate the dispute between Syria and Turkey apart from Egypt?"}
+{"query_id": "duc04-test-38:::7", "query_text": "What was the accusation made by Lebanon against Israel?"}
+{"query_id": "duc04-test-38:::8", "query_text": "What was the reaction of Greece to the tensions between Syria and Turkey?"}
+{"query_id": "duc04-test-38:::9", "query_text": "What was the purpose of the visit planned by Assad to Turkey?"}
+{"query_id": "duc04-test-38:::10", "query_text": "When did the fighting between Turkey and Kurdish rebels begin?"}
+{"query_id": "duc04-test-38:::11", "query_text": "What was the claim made by Syria against Turkey?"}
+{"query_id": "duc04-test-38:::12", "query_text": "What was the response of Turkey to Syria's sheltering of Kurdish rebels?"}
+{"query_id": "duc04-test-38:::13", "query_text": "What was the stance of Israel on its military cooperation with Turkey?"}
+{"query_id": "duc04-test-38:::14", "query_text": "What was the goal of the mediation efforts by Egypt, Iran, and Jordan?"}
+{"query_id": "duc04-test-39:::0", "query_text": "What was the result of the 1998 congressional elections?"}
+{"query_id": "duc04-test-39:::1", "query_text": "Who led the impeachment inquiry against President Clinton in the House?"}
+{"query_id": "duc04-test-39:::2", "query_text": "What was the outcome of the election for the Democrats in the House and Senate?"}
+{"query_id": "duc04-test-39:::3", "query_text": "Why did Republicans turn against Newt Gingrich after the 1998 elections?"}
+{"query_id": "duc04-test-39:::4", "query_text": "Who was the main actor in the campaign to replace Gingrich as Speaker?"}
+{"query_id": "duc04-test-39:::5", "query_text": "What was the consequence of Gingrich's resignation as Speaker?"}
+{"query_id": "duc04-test-39:::6", "query_text": "What was the reaction of Democrats to Gingrich's leadership leading up to the 1998 elections?"}
+{"query_id": "duc04-test-39:::7", "query_text": "What was Gingrich's role in the Republican party?"}
+{"query_id": "duc04-test-39:::8", "query_text": "What was the outcome of the impeachment proceedings against President Clinton?"}
+{"query_id": "duc04-test-39:::9", "query_text": "Who was the strategist who urged Democrats to go after Gingrich in October?"}
+{"query_id": "duc04-test-39:::10", "query_text": "What was the result of the 1998 elections for the Republican party?"}
+{"query_id": "duc04-test-39:::11", "query_text": "Who was blamed for the Republican party's losses in the 1998 elections?"}
+{"query_id": "duc04-test-39:::12", "query_text": "What was the reaction of old Democratic loyalists to Clinton's morals during the 1998 elections?"}
+{"query_id": "duc04-test-39:::13", "query_text": "What was the reason for Gingrich's decision to leave his House seat?"}
+{"query_id": "duc04-test-39:::14", "query_text": "What was the date of Gingrich's announcement that he would not seek re-election as Speaker?"}
+{"query_id": "duc04-test-40:::0", "query_text": "What is the US demanding from North Korea in regards to the suspected nuclear site?"}
+{"query_id": "duc04-test-40:::1", "query_text": "What is the current state of North Korea's economy?"}
+{"query_id": "duc04-test-40:::2", "query_text": "How has the US aided North Korea in the past?"}
+{"query_id": "duc04-test-40:::3", "query_text": "What is the US policy towards Iraq?"}
+{"query_id": "duc04-test-40:::4", "query_text": "What is the proposed payment for US inspectors to visit the suspected nuclear site in North Korea?"}
+{"query_id": "duc04-test-40:::5", "query_text": "What did President Clinton caution North Korea to focus on during his visit to Seoul?"}
+{"query_id": "duc04-test-40:::6", "query_text": "What is the current state of US-North Korean relations?"}
+{"query_id": "duc04-test-40:::7", "query_text": "What is the purpose of the US delegation's visit to North Korea?"}
+{"query_id": "duc04-test-40:::8", "query_text": "What did US intelligence discover in North Korea in August?"}
+{"query_id": "duc04-test-40:::9", "query_text": "What is the current state of the North Korean military?"}
+{"query_id": "duc04-test-40:::10", "query_text": "What is the US's stance on the North Korean nuclear program?"}
+{"query_id": "duc04-test-40:::11", "query_text": "What is the significance of the 1994 agreement between the US and North Korea?"}
+{"query_id": "duc04-test-40:::12", "query_text": "What is the current state of North Korea's relations with South Korea?"}
+{"query_id": "duc04-test-40:::13", "query_text": "What is the proposed solution to ease tensions on the Asian peninsula?"}
+{"query_id": "duc04-test-40:::14", "query_text": "What is the current state of the famine in North Korea?"}
+{"query_id": "duc04-test-41:::0", "query_text": "Who is the Prime Minister of Italy that lost a confidence vote and was toppled from power?"}
+{"query_id": "duc04-test-41:::1", "query_text": "What was the reason for the Communist Refounding Party's rejection of Prime Minister Prodi's proposed 1999 budget?"}
+{"query_id": "duc04-test-41:::2", "query_text": "How long had Prodi's center-left coalition been in power before the crisis?"}
+{"query_id": "duc04-test-41:::3", "query_text": "What was the outcome of the confidence vote in Parliament?"}
+{"query_id": "duc04-test-41:::4", "query_text": "Who will decide whether to hold new elections or to ask Prodi or someone else to forge a new majority?"}
+{"query_id": "duc04-test-41:::5", "query_text": "What was the main goal of Prodi's proposed 1999 budget?"}
+{"query_id": "duc04-test-41:::6", "query_text": "How many votes did Prodi's coalition need for a majority?"}
+{"query_id": "duc04-test-41:::7", "query_text": "Which party's defection imperiled the future of the center-left coalition led by Premier Prodi?"}
+{"query_id": "duc04-test-41:::8", "query_text": "What was the significance of the euro currency in the context of Italy's 1999 budget?"}
+{"query_id": "duc04-test-41:::9", "query_text": "How many governments had Italy had since WWII before Prodi's government?"}
+{"query_id": "duc04-test-41:::10", "query_text": "What was the impact of Prodi's loss of power on Italy's political stability and decisions regarding NATO's use of Italian air bases in strikes on Kosovo?"}
+{"query_id": "duc04-test-41:::11", "query_text": "What was the result of the break with Prodi within the Refounding party?"}
+{"query_id": "duc04-test-41:::12", "query_text": "How long will Prodi stay as caretaker premier?"}
+{"query_id": "duc04-test-41:::13", "query_text": "What was the main criticism of Prodi's proposed 1999 budget by the Communist Refoundation Party?"}
+{"query_id": "duc04-test-41:::14", "query_text": "Who is the President of Italy that asked Prodi to stay as caretaker prime minister?"}
+{"query_id": "duc04-test-42:::0", "query_text": "What are the primary reasons behind Exxon and Mobil's consideration of a merger?"}
+{"query_id": "duc04-test-42:::1", "query_text": "What would be the outcome of an Exxon-Mobil merger in terms of the company's size and ranking?"}
+{"query_id": "duc04-test-42:::2", "query_text": "How do experts view the potential advantages of an Exxon-Mobil merger?"}
+{"query_id": "duc04-test-42:::3", "query_text": "What are some of the potential downsides of an Exxon-Mobil merger, according to refinery workers and others?"}
+{"query_id": "duc04-test-42:::4", "query_text": "What is the current trend in corporate mergers, and how is it affecting the stock market?"}
+{"query_id": "duc04-test-42:::5", "query_text": "What would be the historical significance of an Exxon-Mobil merger in terms of Standard Oil?"}
+{"query_id": "duc04-test-42:::6", "query_text": "How would an Exxon-Mobil merger impact the oil industry, and what are some of the potential consequences?"}
+{"query_id": "duc04-test-42:::7", "query_text": "What are some of the challenges that Exxon and Mobil would face in merging their business operations?"}
+{"query_id": "duc04-test-42:::8", "query_text": "How would a merger between Exxon and Mobil affect the job market, particularly for refinery workers?"}
+{"query_id": "duc04-test-42:::9", "query_text": "What are some of the potential benefits of an Exxon-Mobil merger for consumers?"}
+{"query_id": "duc04-test-42:::10", "query_text": "How would an Exxon-Mobil merger be viewed from an anti-trust perspective, and what actions might be taken?"}
+{"query_id": "duc04-test-42:::11", "query_text": "What are some of the potential long-term effects of an Exxon-Mobil merger on the US economy?"}
+{"query_id": "duc04-test-42:::12", "query_text": "How do Mobil employees feel about the potential merger, and what are their concerns?"}
+{"query_id": "duc04-test-42:::13", "query_text": "What is the significance of Exxon and Mobil's merger talks in the context of the current business environment?"}
+{"query_id": "duc04-test-42:::14", "query_text": "How would an Exxon-Mobil merger compare to other major oil companies, such as Royal Dutch/Shell Group?"}
+{"query_id": "duc04-test-43:::0", "query_text": "What was the U.S. response to the bombing of U.S. embassies in East Africa?"}
+{"query_id": "duc04-test-43:::1", "query_text": "What was the target of the U.S. missile attacks in August 1998?"}
+{"query_id": "duc04-test-43:::2", "query_text": "Who did the U.S. initiate legal action against in September 1998?"}
+{"query_id": "duc04-test-43:::3", "query_text": "What evidence did the U.S. have to support its case against Osama bin Laden?"}
+{"query_id": "duc04-test-43:::4", "query_text": "Where were bin Laden agents reportedly active?"}
+{"query_id": "duc04-test-43:::5", "query_text": "What was the Taliban government of Afghanistan's stance on Osama bin Laden?"}
+{"query_id": "duc04-test-43:::6", "query_text": "What was the goal of the U.S. August raid in Afghanistan?"}
+{"query_id": "duc04-test-43:::7", "query_text": "What was the outcome of the U.S. request to extradite a bin Laden lieutenant?"}
+{"query_id": "duc04-test-43:::8", "query_text": "What was the FBI doing in preparation for the trial of the 6 suspects?"}
+{"query_id": "duc04-test-43:::9", "query_text": "What was the Taliban's response to the U.S. accusations against Osama bin Laden?"}
+{"query_id": "duc04-test-43:::10", "query_text": "What was discovered about the Sudanese factory bombed by the U.S.?"}
+{"query_id": "duc04-test-43:::11", "query_text": "Where did the East African bin Laden cell have security issues?"}
+{"query_id": "duc04-test-43:::12", "query_text": "What was the reaction of Afghanistan to the U.S. accusations against Osama bin Laden?"}
+{"query_id": "duc04-test-43:::13", "query_text": "What was the reaction of Bangladesh to the pro-Taliban movement?"}
+{"query_id": "duc04-test-43:::14", "query_text": "What was the concern of Albania regarding Osama bin Laden's network?"}
+{"query_id": "duc04-test-44:::0", "query_text": "What was the reason behind the arrest of former Chilean dictator Pinochet in London?"}
+{"query_id": "duc04-test-44:::1", "query_text": "Who was seeking the extradition of Pinochet from London?"}
+{"query_id": "duc04-test-44:::2", "query_text": "What was the basis of the claims that Pinochet's arrest was illegal?"}
+{"query_id": "duc04-test-44:::3", "query_text": "What was the position of the British and Spanish governments regarding the arrest?"}
+{"query_id": "duc04-test-44:::4", "query_text": "Who defended the arrest of Pinochet?"}
+{"query_id": "duc04-test-44:::5", "query_text": "What was the response of Pinochet's wife to his arrest?"}
+{"query_id": "duc04-test-44:::6", "query_text": "What was the position of the Chilean government regarding Pinochet's extradition?"}
+{"query_id": "duc04-test-44:::7", "query_text": "Who else was seeking Pinochet's arrest besides Spain?"}
+{"query_id": "duc04-test-44:::8", "query_text": "What was the outcome of the request to freeze Pinochet's Swiss accounts?"}
+{"query_id": "duc04-test-44:::9", "query_text": "What was the position of Fidel Castro regarding Pinochet's arrest?"}
+{"query_id": "duc04-test-44:::10", "query_text": "What was the position of the European Community president regarding Pinochet's trial?"}
+{"query_id": "duc04-test-44:::11", "query_text": "What was the reason for Pinochet's visit to London?"}
+{"query_id": "duc04-test-44:::12", "query_text": "Who else was lobbying against Pinochet's extradition?"}
+{"query_id": "duc04-test-44:::13", "query_text": "What was the status of the extradition request as of October 28?"}
+{"query_id": "duc04-test-44:::14", "query_text": "What other charges were filed against Pinochet besides the murder of Spanish citizens?"}
+{"query_id": "duc04-test-45:::0", "query_text": "What was the death toll from the terrorist bombing of the US embassy in Nairobi?"}
+{"query_id": "duc04-test-45:::1", "query_text": "How many Americans were killed in the US embassy bombing in Dar es Salaam?"}
+{"query_id": "duc04-test-45:::2", "query_text": "What was the accusation made against the State Department in an editorial?"}
+{"query_id": "duc04-test-45:::3", "query_text": "What is the status of the three suspects in custody in New York?"}
+{"query_id": "duc04-test-45:::4", "query_text": "Who has been indicted by a federal grand jury for conspiracy in the bombings?"}
+{"query_id": "duc04-test-45:::5", "query_text": "Where is Osama bin Laden currently located, and who is protecting him?"}
+{"query_id": "duc04-test-45:::6", "query_text": "What threat did German police receive?"}
+{"query_id": "duc04-test-45:::7", "query_text": "How many people were injured in the bombings of the US embassies in Kenya and Tanzania?"}
+{"query_id": "duc04-test-45:::8", "query_text": "What is the status of the three suspects in a New York City jail?"}
+{"query_id": "duc04-test-45:::9", "query_text": "What was the response of the Taliban to the US indictment of Osama bin Laden?"}
+{"query_id": "duc04-test-45:::10", "query_text": "What reward is being offered for information leading to the capture or conviction of Osama bin Laden and Muhammed Atef?"}
+{"query_id": "duc04-test-45:::11", "query_text": "How many people were killed in the bombings of the US embassies in Kenya and Tanzania?"}
+{"query_id": "duc04-test-45:::12", "query_text": "What warning did the US ignore, and how long before the Kenya attack did they receive it?"}
+{"query_id": "duc04-test-45:::13", "query_text": "How many counts was Osama bin Laden indicted on in connection with the bombings?"}
+{"query_id": "duc04-test-45:::14", "query_text": "What is the current status of the seven men arrested for the bombings of the US embassies in Kenya and Tanzania?"}
+{"query_id": "duc04-test-46:::0", "query_text": "What was the outcome of the sixth game of the American League playoffs?"}
+{"query_id": "duc04-test-46:::1", "query_text": "Which team did the San Diego Padres win against to advance to the World Series?"}
+{"query_id": "duc04-test-46:::2", "query_text": "How many Padres fans shaved their heads in a radio promotion raffle?"}
+{"query_id": "duc04-test-46:::3", "query_text": "What was the reaction of the crowd to Chuck Knoblauch's appearance in the first game?"}
+{"query_id": "duc04-test-46:::4", "query_text": "Who hit the game-winning homerun hits in the 7th inning?"}
+{"query_id": "duc04-test-46:::5", "query_text": "How many Padres fans shaved their heads for a raffle to win playoff skybox seats?"}
+{"query_id": "duc04-test-46:::6", "query_text": "What concerns do the Yankees fans have about the team's prospects?"}
+{"query_id": "duc04-test-46:::7", "query_text": "What is the Yankees' edge in the World Series?"}
+{"query_id": "duc04-test-46:::8", "query_text": "How did Chuck Knoblauch and Tino Martinez redeem themselves in the Series opener?"}
+{"query_id": "duc04-test-46:::9", "query_text": "What was the Yankees' record in the season?"}
+{"query_id": "duc04-test-46:::10", "query_text": "Why did Darryl Strawberry sit out in the World Series?"}
+{"query_id": "duc04-test-46:::11", "query_text": "What is the significance of the World Series after the introduction of league championships and 2-layered playoffs?"}
+{"query_id": "duc04-test-46:::12", "query_text": "Who is the star second baseman of the Yankees?"}
+{"query_id": "duc04-test-46:::13", "query_text": "What was the outcome of the first game of the 1998 World Series?"}
+{"query_id": "duc04-test-46:::14", "query_text": "Who started the first game of the World Series for the Padres?"}
+{"query_id": "duc04-test-47:::0", "query_text": "How many people are hurt by land mines in Chechnya per week?"}
+{"query_id": "duc04-test-47:::1", "query_text": "What happened to the bodies of the four kidnapped foreign telephone engineers?"}
+{"query_id": "duc04-test-47:::2", "query_text": "Who condemned the slayings of the four kidnapped foreigners?"}
+{"query_id": "duc04-test-47:::3", "query_text": "What did the Chechen vice president claim about the kidnapped foreigners?"}
+{"query_id": "duc04-test-47:::4", "query_text": "Why was a Chechen prosecutor investigating the kidnappings abducted?"}
+{"query_id": "duc04-test-47:::5", "query_text": "What was the outcome of the operation to free the French UN official?"}
+{"query_id": "duc04-test-47:::6", "query_text": "How many people have been taken for ransom in Chechnya?"}
+{"query_id": "duc04-test-47:::7", "query_text": "What is the nationality of the majority of the people taken for ransom?"}
+{"query_id": "duc04-test-47:::8", "query_text": "What was the outcome of the rescue attempt for the four UK Telecom engineers?"}
+{"query_id": "duc04-test-47:::9", "query_text": "What was the reaction of Britain and the European Union to the beheading of the four kidnapped foreigners?"}
+{"query_id": "duc04-test-47:::10", "query_text": "Who was abducted after the beheading of the four kidnapped foreigners?"}
+{"query_id": "duc04-test-47:::11", "query_text": "How many Russian soldiers were rescued in Chechnya?"}
+{"query_id": "duc04-test-47:::12", "query_text": "Who was investigating the slaying of the four kidnapped foreigners?"}
+{"query_id": "duc04-test-47:::13", "query_text": "What was the occupation of the four kidnapped foreigners?"}
+{"query_id": "duc04-test-47:::14", "query_text": "How common is kidnapping for ransom in Chechnya?"}
+{"query_id": "duc04-test-48:::0", "query_text": "What event occurred on the eve of China signing the International Covenant of Civil and Political Rights (ICCPR) in October 1998?"}
+{"query_id": "duc04-test-48:::1", "query_text": "2. Who was arrested eight weeks after China signed the ICCPR, and what were they accused of?"}
+{"query_id": "duc04-test-48:::2", "query_text": "3. What charges were brought against Qin Yongmin and Wang Youcai in December?"}
+{"query_id": "duc04-test-48:::3", "query_text": "4. Why were Qin and Wang unable to obtain legal counsel for their trial?"}
+{"query_id": "duc04-test-48:::4", "query_text": "5. What was the outcome of Qin Yongmin's attempt to defend himself during the trial?"}
+{"query_id": "duc04-test-48:::5", "query_text": "6. What was the China Democracy Party's stance on challenging the communist party's power monopoly?"}
+{"query_id": "duc04-test-48:::6", "query_text": "7. How did the US react to the arrests of Qin Yongmin and Xu Wenli?"}
+{"query_id": "duc04-test-48:::7", "query_text": "8. What happened to Yao Zhenxian after being released from a labor camp?"}
+{"query_id": "duc04-test-48:::8", "query_text": "9. What was the reason given by the Chinese government for the arrest of Qin Yongmin and other dissidents?"}
+{"query_id": "duc04-test-48:::9", "query_text": "10. What was the significance of the China Democracy Party's founding during Clinton's visit to China?"}
+{"query_id": "duc04-test-48:::10", "query_text": "11. What was the duration of Qin Yongmin's and Wang Youcai's trials?"}
+{"query_id": "duc04-test-48:::11", "query_text": "12. What was the reason for the speedy trials of Qin Yongmin and Wang Youcai?"}
+{"query_id": "duc04-test-48:::12", "query_text": "13. Why were Qin Yongmin and Wang Youcai forced to defend themselves during their trial?"}
+{"query_id": "duc04-test-48:::13", "query_text": "14. What was the reaction of the international community to China's human rights record during this period?"}
+{"query_id": "duc04-test-48:::14", "query_text": "15. What was the significance of China's signing of the International Covenant of Civil and Political Rights (ICCPR) in relation to its human rights record?"}
+{"query_id": "duc04-test-49:::0", "query_text": "What was the economic situation in Russia in October 1998?"}
+{"query_id": "duc04-test-49:::1", "query_text": "Who was the Prime Minister of Russia supported by Communists in 1998?"}
+{"query_id": "duc04-test-49:::2", "query_text": "What was the condition set by IMF for approving loan payment to Russia?"}
+{"query_id": "duc04-test-49:::3", "query_text": "How did the economic crisis in Russia affect its neighboring country Ukraine?"}
+{"query_id": "duc04-test-49:::4", "query_text": "What was the economic forecast predicted by IMF officials before the crisis?"}
+{"query_id": "duc04-test-49:::5", "query_text": "What was the impact of the economic crisis on the Russian postal service?"}
+{"query_id": "duc04-test-49:::6", "query_text": "What was the reaction of President Kuchma of Ukraine to the economic crisis?"}
+{"query_id": "duc04-test-49:::7", "query_text": "What was the consequence of fifteen months of world economic turmoil?"}
+{"query_id": "duc04-test-49:::8", "query_text": "What was the response of the Federal Reserve to the economic crisis?"}
+{"query_id": "duc04-test-49:::9", "query_text": "What was the concern of IMF about the economic situation in Japan?"}
+{"query_id": "duc04-test-49:::10", "query_text": "What was the criticism faced by IMF regarding its actions?"}
+{"query_id": "duc04-test-49:::11", "query_text": "What measures was Russia considering to address its economic crisis?"}
+{"query_id": "duc04-test-49:::12", "query_text": "What was the impact of the economic crisis on Ukraine's banking system?"}
+{"query_id": "duc04-test-49:::13", "query_text": "What was the outcome of the Parliament's vote on the bill to restore lost savings in Ukraine?"}
+{"query_id": "duc04-test-49:::14", "query_text": "What was the effect of the small cut in US interest rates on the global market?"}

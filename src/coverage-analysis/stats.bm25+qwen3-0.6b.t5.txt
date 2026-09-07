@@ -1,0 +1,50 @@
+Total topics: 90000 
+Total fully answerable topics 606
+Average n_subtopics: 14.321955555555556
+Average n_answerable: 5.586266666666667
+Average n_unanswerable: 8.73568888888889
+Average coverage_per_doc at rank 1: 0.12904529096077746
+Average coverage_per_doc at rank 2: 0.12037874377370418
+Average coverage_per_doc at rank 3: 0.11243477922811189
+Average coverage_per_doc at rank 4: 0.10518998678625659
+Average coverage_per_doc at rank 5: 0.0986896159797998
+Average coverage_per_doc at rank 6: 0.09329738919633991
+Average coverage_per_doc at rank 7: 0.08820181991617673
+Average coverage_per_doc at rank 8: 0.08372023184965385
+Average coverage_per_doc at rank 9: 0.08000728857064249
+Average coverage_per_doc at rank 10: 0.0769291411261097
+Average coverage_per_doc at rank 11: 0.07346500439249454
+Average coverage_per_doc at rank 12: 0.07062704787234295
+Average coverage_per_doc at rank 13: 0.06788883958487249
+Average coverage_per_doc at rank 14: 0.06473907767642041
+Average coverage_per_doc at rank 15: 0.06253804939610558
+Average coverage_per_doc at rank 16: 0.06006934761756401
+Average coverage_per_doc at rank 17: 0.05787624133753774
+Average coverage_per_doc at rank 18: 0.05614429040081772
+Average coverage_per_doc at rank 19: 0.05403392712642733
+Average coverage_per_doc at rank 20: 0.05169162820612411
+Average coverage at rank 1: 0.12904529096077746
+Average coverage at rank 2: 0.18919452361738634
+Average coverage at rank 3: 0.22739100576800972
+Average coverage at rank 4: 0.2546300971154926
+Average coverage at rank 5: 0.2756349762455186
+Average coverage at rank 6: 0.29251543897244137
+Average coverage at rank 7: 0.3062374537018278
+Average coverage at rank 8: 0.3179679442226746
+Average coverage at rank 9: 0.3281707710503199
+Average coverage at rank 10: 0.33718398954995393
+Average coverage at rank 11: 0.34530407062167695
+Average coverage at rank 12: 0.352608065958268
+Average coverage at rank 13: 0.3591459613837297
+Average coverage at rank 14: 0.36499630045234444
+Average coverage at rank 15: 0.3704318665891355
+Average coverage at rank 16: 0.3753193870501391
+Average coverage at rank 17: 0.37986672374008257
+Average coverage at rank 18: 0.3840008329538067
+Average coverage at rank 19: 0.38793673958450914
+Average coverage at rank 20: 0.391473878825752
+Average high_coverage_document_ids: 0.02728888888888889
+Average half_coverage_document_ids: 0.28123333333333334
+Average quarter_coverage_document_ids: 1.7579555555555555
+Average low_coverage_document_ids: 97.93352222222222
+Average negative_document_ids: 90.5445
