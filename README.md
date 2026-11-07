@@ -39,6 +39,18 @@ git clone https://huggingface.co/datasets/DylanJHJ/crux-mds-corpus
 > For BEIR corpus, we use `ir_datasets` API at [here](https://ir-datasets.com/beir.html)
 > For NeuCLIR corpus, we use the [English translation provided by the organizer team](https://huggingface.co/datasets/neuclir/neuclir1/viewer/mt_docs).
 
+> [!IMPORTANT]
+> **To reproduce the paper, install the Tevatron copy bundled in this repo (`./tevatron`)**, not upstream
+> Tevatron or a newer version of the fork. The training scripts depend on settings that only this
+> copy has, e.g. `train_covdistil`, `--covdistil_method`, `--use_kld` and `--use_crossentropy`.
+> If another Tevatron is already installed, uninstall it first (`pip uninstall tevatron`), or put this
+> copy first on the path when launching jobs:
+> ```bash
+> PYTHONPATH=$PWD/tevatron/src sbatch slurm/<script>.sh
+> ```
+> Check which copy is used with `python -c "import tevatron; print(tevatron.__file__)"`. It should
+> point into `./tevatron/src`.
+
 ---
 ## Usage
 
